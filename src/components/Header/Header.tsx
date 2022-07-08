@@ -144,13 +144,13 @@ export default function PrimarySearchAppBar() {
         <AppBar position="static">
           <Toolbar>
             <IconButton
-              size="large"
+              size="medium"
               edge="start"
               color="inherit"
               aria-label="open drawer"
-              sx={{ mr: 2 }}
+              sx={{ mr: 0.75 }}
             >
-              <ArrowBackIcon/>
+              <ArrowBackIcon />
             </IconButton>
             <Typography
               variant="h6"
@@ -163,7 +163,7 @@ export default function PrimarySearchAppBar() {
               {getPath("root/src/components")}
             </Typography>
             <Box sx={{ flexGrow: 1 }} />
-            <Search>
+            <Search sx={{ mr: 2 }}>
               <SearchIconWrapper>
                 <SearchIcon />
               </SearchIconWrapper>
@@ -175,21 +175,23 @@ export default function PrimarySearchAppBar() {
 
             <Box sx={{ display: { xs: "none", md: "flex" } }}>
               <IconButton
-                size="large"
+                size="medium"
                 aria-label="show 4 new mails"
                 color="inherit"
+                sx={{ mr: 1, ml: 0.75 }}
               >
                 <FormatListBulletedIcon />
               </IconButton>
               <IconButton
-                size="large"
+                size="medium"
                 aria-label=""
                 color="inherit"
+                sx={{ mr: 1 }}
               >
                 <LightModeIcon />
               </IconButton>
               <IconButton
-                size="large"
+                size="medium"
                 edge="end"
                 aria-label="Github repo"
                 aria-haspopup="true"
@@ -201,12 +203,13 @@ export default function PrimarySearchAppBar() {
             </Box>
             <Box sx={{ display: { xs: "flex", md: "none" } }}>
               <IconButton
-                size="large"
+                size="medium"
                 aria-label="show more"
                 aria-controls={mobileMenuId}
                 aria-haspopup="true"
                 onClick={handleMobileMenuOpen}
                 color="inherit"
+                sx={{ mr: 1 }}
               >
                 <MoreIcon />
               </IconButton>
