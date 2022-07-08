@@ -66,7 +66,11 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
   },
 }));
 
-export default function PrimarySearchAppBar() {
+type props = {
+  path : string
+};
+
+export default function PrimarySearchAppBar(props : props) {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] =
     React.useState<null | HTMLElement>(null);
@@ -141,7 +145,7 @@ export default function PrimarySearchAppBar() {
               sx={{ flexGrow: 1 }}
               fontFamily="Karla"
             >
-              {getPath("root/src/components")}
+              {getPath(props.path)}
             </Typography>
             <Box sx={{ flexGrow: 1 }} />
             <Search sx={{ mr: 2, border:0.5, borderRadius:5 }}>
