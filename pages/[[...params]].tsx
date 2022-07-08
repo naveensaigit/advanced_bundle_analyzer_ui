@@ -13,7 +13,7 @@ const page: NextPage = () => {
     route += params.join("/");
 
   return (
-    <div className="App bg-[#282828] text-[#F1F1F1] pt-2">
+    <div className="App bg-[#282828] text-[#F1F1F1]">
       <Homepage route={route}/>
     </div>
   )
