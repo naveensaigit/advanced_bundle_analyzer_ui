@@ -21,7 +21,7 @@ const darkTheme = createTheme({
   palette: {
     mode: "dark",
     primary: {
-      main: "#1976d2",
+      main: "#000000",
     },
   },
 });
@@ -29,13 +29,13 @@ const darkTheme = createTheme({
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
   borderRadius: theme.shape.borderRadius,
-  backgroundColor: alpha(theme.palette.common.white, 0.15),
+  backgroundColor: alpha(theme.palette.common.white, 0.05),
   "&:hover": {
-    backgroundColor: alpha(theme.palette.common.white, 0.25),
+    backgroundColor: alpha(theme.palette.common.white, 0.10),
   },
   marginRight: theme.spacing(2),
   marginLeft: 0,
-  width: "100%",
+  width: "auto",
   [theme.breakpoints.up("sm")]: {
     marginLeft: theme.spacing(3),
     width: "auto",
@@ -74,24 +74,15 @@ export default function PrimarySearchAppBar() {
   const isMenuOpen = Boolean(anchorEl);
   const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
 
-  const handleProfileMenuOpen = (event: React.MouseEvent<HTMLElement>) => {
-    setAnchorEl(event.currentTarget);
-  };
-
   const handleMobileMenuClose = () => {
     setMobileMoreAnchorEl(null);
-  };
-
-  const handleMenuClose = () => {
-    setAnchorEl(null);
-    handleMobileMenuClose();
   };
 
   const handleMobileMenuOpen = (event: React.MouseEvent<HTMLElement>) => {
     setMobileMoreAnchorEl(event.currentTarget);
   };
 
-  const mobileMenuId = "primary-search-account-menu-mobile";
+  const mobileMenuId = "primary-menu-mobile";
   const renderMobileMenu = (
     <Menu
       anchorEl={mobileMoreAnchorEl}
@@ -115,22 +106,13 @@ export default function PrimarySearchAppBar() {
         <p>List View</p>
       </MenuItem>
       <MenuItem>
-        <IconButton
-          size="large"
-          aria-label="show 17 new notifications"
-          color="inherit"
-        >
+        <IconButton size="large" color="inherit">
           <LightModeIcon />
         </IconButton>
         <p>Light Mode</p>
       </MenuItem>
-      <MenuItem onClick={handleProfileMenuOpen}>
-        <IconButton
-          size="large"
-          aria-label="Github repo"
-          aria-haspopup="true"
-          color="inherit"
-        >
+      <MenuItem>
+        <IconButton size="large" aria-haspopup="true" color="inherit">
           <GitHubIcon />
         </IconButton>
         <p>Github repo</p>
@@ -141,13 +123,12 @@ export default function PrimarySearchAppBar() {
   return (
     <ThemeProvider theme={darkTheme}>
       <Box sx={{ flexGrow: 1 }}>
-        <AppBar position="static">
+        <AppBar position="static" sx={{ backgroundColor: "black" }}>
           <Toolbar>
             <IconButton
               size="medium"
               edge="start"
               color="inherit"
-              aria-label="open drawer"
               sx={{ mr: 0.75 }}
             >
               <ArrowBackIcon />
@@ -163,7 +144,7 @@ export default function PrimarySearchAppBar() {
               {getPath("root/src/components")}
             </Typography>
             <Box sx={{ flexGrow: 1 }} />
-            <Search sx={{ mr: 2 }}>
+            <Search sx={{ mr: 2, border:0.5, borderRadius:5 }}>
               <SearchIconWrapper>
                 <SearchIcon />
               </SearchIconWrapper>
@@ -176,26 +157,18 @@ export default function PrimarySearchAppBar() {
             <Box sx={{ display: { xs: "none", md: "flex" } }}>
               <IconButton
                 size="medium"
-                aria-label="show 4 new mails"
                 color="inherit"
                 sx={{ mr: 1, ml: 0.75 }}
               >
                 <FormatListBulletedIcon />
               </IconButton>
-              <IconButton
-                size="medium"
-                aria-label=""
-                color="inherit"
-                sx={{ mr: 1 }}
-              >
+              <IconButton size="medium" color="inherit" sx={{ mr: 1 }}>
                 <LightModeIcon />
               </IconButton>
               <IconButton
                 size="medium"
                 edge="end"
-                aria-label="Github repo"
                 aria-haspopup="true"
-                onClick={handleProfileMenuOpen}
                 color="inherit"
               >
                 <GitHubIcon />
@@ -204,12 +177,10 @@ export default function PrimarySearchAppBar() {
             <Box sx={{ display: { xs: "flex", md: "none" } }}>
               <IconButton
                 size="medium"
-                aria-label="show more"
                 aria-controls={mobileMenuId}
                 aria-haspopup="true"
                 onClick={handleMobileMenuOpen}
                 color="inherit"
-                sx={{ mr: 1 }}
               >
                 <MoreIcon />
               </IconButton>
