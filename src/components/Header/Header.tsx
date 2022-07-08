@@ -14,6 +14,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import FormatListBulletedIcon from "@mui/icons-material/FormatListBulleted";
 import LightModeIcon from "@mui/icons-material/LightMode";
 import MoreIcon from "@mui/icons-material/MoreVert";
+import { Dispatch, SetStateAction} from 'react';
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import getPath from "./path";
 
@@ -67,10 +68,13 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 }));
 
 type props = {
-  path : string
+  path : string,
+  route: string,
+  setRoute: Dispatch<SetStateAction<string>>
 };
 
 export default function PrimarySearchAppBar(props : props) {
+  const {route, setRoute} = props;
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] =
     React.useState<null | HTMLElement>(null);
@@ -134,8 +138,15 @@ export default function PrimarySearchAppBar(props : props) {
               edge="start"
               color="inherit"
               sx={{ mr: 0.75 }}
+              onClick={() => {
+                const ind = route.lastIndexOf("/");
+                if(ind > 0)
+                  setRoute(route.slice(0, ind))
+                else
+                  setRoute("/")
+              }}
             >
-              <ArrowBackIcon />
+              <ArrowBackIcon/>
             </IconButton>
             <Typography
               variant="h6"
@@ -145,7 +156,7 @@ export default function PrimarySearchAppBar(props : props) {
               sx={{ flexGrow: 1 }}
               fontFamily="Karla"
             >
-              {getPath(props.path)}
+              {getPath(route)}
             </Typography>
             <Box sx={{ flexGrow: 1 }} />
             <Search sx={{ mr: 2, border:0.5, borderRadius:5 }}>

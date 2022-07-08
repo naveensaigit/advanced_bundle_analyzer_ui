@@ -1,0 +1,429 @@
+{
+  "rootPath": {
+    "name": "rootPath",
+    "path": "/Users/naveen/code/react-crypto-tracker",
+    "size": 0,
+    "type": "",
+    "totalLazyLoaded": [],
+    "canBeLazyLoaded": [],
+    "parentFolder": "/.."
+  },
+  "/component-tree.txt": {
+    "name": "component-tree.txt",
+    "path": "/Users/naveen/code/react-crypto-tracker/component-tree.txt",
+    "size": 238,
+    "type": ".txt",
+    "totalLazyLoaded": [],
+    "canBeLazyLoaded": [],
+    "parentFolder": "/"
+  },
+  "/data.json": {
+    "name": "data.json",
+    "path": "/Users/naveen/code/react-crypto-tracker/data.json",
+    "size": 11313,
+    "type": ".json",
+    "totalLazyLoaded": [],
+    "canBeLazyLoaded": [],
+    "parentFolder": "/"
+  },
+  "/package-lock.json": {
+    "name": "package-lock.json",
+    "path": "/Users/naveen/code/react-crypto-tracker/package-lock.json",
+    "size": 1666887,
+    "type": ".json",
+    "totalLazyLoaded": [],
+    "canBeLazyLoaded": [],
+    "parentFolder": "/"
+  },
+  "/package.json": {
+    "name": "package.json",
+    "path": "/Users/naveen/code/react-crypto-tracker/package.json",
+    "size": 1255,
+    "type": ".json",
+    "totalLazyLoaded": [],
+    "canBeLazyLoaded": [],
+    "parentFolder": "/"
+  },
+  "/public/banner2.jpg": {
+    "name": "banner2.jpg",
+    "path": "/Users/naveen/code/react-crypto-tracker/public/banner2.jpg",
+    "size": 343365,
+    "type": ".jpg",
+    "totalLazyLoaded": [],
+    "canBeLazyLoaded": [],
+    "parentFolder": "/public"
+  },
+  "/public/favicon.ico": {
+    "name": "favicon.ico",
+    "path": "/Users/naveen/code/react-crypto-tracker/public/favicon.ico",
+    "size": 3870,
+    "type": ".ico",
+    "totalLazyLoaded": [],
+    "canBeLazyLoaded": [],
+    "parentFolder": "/public"
+  },
+  "/public/index.html": {
+    "name": "index.html",
+    "path": "/Users/naveen/code/react-crypto-tracker/public/index.html",
+    "size": 1725,
+    "type": ".html",
+    "totalLazyLoaded": [],
+    "canBeLazyLoaded": [],
+    "parentFolder": "/public"
+  },
+  "/public/logo192.png": {
+    "name": "logo192.png",
+    "path": "/Users/naveen/code/react-crypto-tracker/public/logo192.png",
+    "size": 5347,
+    "type": ".png",
+    "totalLazyLoaded": [],
+    "canBeLazyLoaded": [],
+    "parentFolder": "/public"
+  },
+  "/public/logo512.png": {
+    "name": "logo512.png",
+    "path": "/Users/naveen/code/react-crypto-tracker/public/logo512.png",
+    "size": 9664,
+    "type": ".png",
+    "totalLazyLoaded": [],
+    "canBeLazyLoaded": [],
+    "parentFolder": "/public"
+  },
+  "/public/manifest.json": {
+    "name": "manifest.json",
+    "path": "/Users/naveen/code/react-crypto-tracker/public/manifest.json",
+    "size": 492,
+    "type": ".json",
+    "totalLazyLoaded": [],
+    "canBeLazyLoaded": [],
+    "parentFolder": "/public"
+  },
+  "/public/robots.txt": {
+    "name": "robots.txt",
+    "path": "/Users/naveen/code/react-crypto-tracker/public/robots.txt",
+    "size": 67,
+    "type": ".txt",
+    "totalLazyLoaded": [],
+    "canBeLazyLoaded": [],
+    "parentFolder": "/public"
+  },
+  "/public": {
+    "name": "public",
+    "path": "/Users/naveen/code/react-crypto-tracker/public",
+    "size": 364530,
+    "noOfSubFolders": 0,
+    "noOfSubFiles": 7,
+    "totalLazyLoaded": 0,
+    "canBeLazyLoaded": 0,
+    "foldersInside": [],
+    "filesInside": [
+      "/public/banner2.jpg",
+      "/public/favicon.ico",
+      "/public/index.html",
+      "/public/logo192.png",
+      "/public/logo512.png",
+      "/public/manifest.json",
+      "/public/robots.txt"
+    ],
+    "parentFolder": "/"
+  },
+  "/src/App.css": {
+    "name": "App.css",
+    "path": "/Users/naveen/code/react-crypto-tracker/src/App.css",
+    "size": 232,
+    "type": ".css",
+    "totalLazyLoaded": [],
+    "canBeLazyLoaded": [],
+    "parentFolder": "/src"
+  },
+  "/src/App.js": {
+    "name": "App.js",
+    "path": "/Users/naveen/code/react-crypto-tracker/src/App.js",
+    "size": 852,
+    "type": ".js",
+    "totalLazyLoaded": [],
+    "canBeLazyLoaded": [
+      {
+        "name": "HomePage",
+        "path": "/src/Pages/HomePage"
+      },
+      {
+        "name": "CoinPage",
+        "path": "/src/Pages/CoinPage"
+      }
+    ],
+    "parentFolder": "/src"
+  },
+  "/src/CryptoContext.js": {
+    "name": "CryptoContext.js",
+    "path": "/Users/naveen/code/react-crypto-tracker/src/CryptoContext.js",
+    "size": 610,
+    "type": ".js",
+    "totalLazyLoaded": [],
+    "canBeLazyLoaded": [],
+    "parentFolder": "/src"
+  },
+  "/src/Pages/CoinPage.js": {
+    "name": "CoinPage.js",
+    "path": "/Users/naveen/code/react-crypto-tracker/src/Pages/CoinPage.js",
+    "size": 4299,
+    "type": ".js",
+    "totalLazyLoaded": [],
+    "canBeLazyLoaded": [],
+    "parentFolder": "/src/Pages"
+  },
+  "/src/Pages/HomePage.js": {
+    "name": "HomePage.js",
+    "path": "/Users/naveen/code/react-crypto-tracker/src/Pages/HomePage.js",
+    "size": 329,
+    "type": ".js",
+    "totalLazyLoaded": [],
+    "canBeLazyLoaded": [],
+    "parentFolder": "/src/Pages"
+  },
+  "/src/Pages/MoviePage.js": {
+    "name": "MoviePage.js",
+    "path": "/Users/naveen/code/react-crypto-tracker/src/Pages/MoviePage.js",
+    "size": 58,
+    "type": ".js",
+    "totalLazyLoaded": [],
+    "canBeLazyLoaded": [],
+    "parentFolder": "/src/Pages"
+  },
+  "/src/Pages/OldMoviePage.js": {
+    "name": "OldMoviePage.js",
+    "path": "/Users/naveen/code/react-crypto-tracker/src/Pages/OldMoviePage.js",
+    "size": 62,
+    "type": ".js",
+    "totalLazyLoaded": [],
+    "canBeLazyLoaded": [],
+    "parentFolder": "/src/Pages"
+  },
+  "/src/Pages": {
+    "name": "Pages",
+    "path": "/Users/naveen/code/react-crypto-tracker/src/Pages",
+    "size": 4748,
+    "noOfSubFolders": 0,
+    "noOfSubFiles": 4,
+    "totalLazyLoaded": 0,
+    "canBeLazyLoaded": 0,
+    "foldersInside": [],
+    "filesInside": [
+      "/src/Pages/CoinPage.js",
+      "/src/Pages/HomePage.js",
+      "/src/Pages/MoviePage.js",
+      "/src/Pages/OldMoviePage.js"
+    ],
+    "parentFolder": "/src"
+  },
+  "/src/components/Banner/Banner.js": {
+    "name": "Banner.js",
+    "path": "/Users/naveen/code/react-crypto-tracker/src/components/Banner/Banner.js",
+    "size": 1443,
+    "type": ".js",
+    "totalLazyLoaded": [],
+    "canBeLazyLoaded": [],
+    "parentFolder": "/src/components/Banner"
+  },
+  "/src/components/Banner/Carousel.js": {
+    "name": "Carousel.js",
+    "path": "/Users/naveen/code/react-crypto-tracker/src/components/Banner/Carousel.js",
+    "size": 2422,
+    "type": ".js",
+    "totalLazyLoaded": [],
+    "canBeLazyLoaded": [],
+    "parentFolder": "/src/components/Banner"
+  },
+  "/src/components/Banner": {
+    "name": "Banner",
+    "path": "/Users/naveen/code/react-crypto-tracker/src/components/Banner",
+    "size": 3865,
+    "noOfSubFolders": 0,
+    "noOfSubFiles": 2,
+    "totalLazyLoaded": 0,
+    "canBeLazyLoaded": 0,
+    "foldersInside": [],
+    "filesInside": [
+      "/src/components/Banner/Banner.js",
+      "/src/components/Banner/Carousel.js"
+    ],
+    "parentFolder": "/src/components"
+  },
+  "/src/components/CoinInfo.js": {
+    "name": "CoinInfo.js",
+    "path": "/Users/naveen/code/react-crypto-tracker/src/components/CoinInfo.js",
+    "size": 3373,
+    "type": ".js",
+    "totalLazyLoaded": [],
+    "canBeLazyLoaded": [],
+    "parentFolder": "/src/components"
+  },
+  "/src/components/CoinsTable.js": {
+    "name": "CoinsTable.js",
+    "path": "/Users/naveen/code/react-crypto-tracker/src/components/CoinsTable.js",
+    "size": 6508,
+    "type": ".js",
+    "totalLazyLoaded": [],
+    "canBeLazyLoaded": [],
+    "parentFolder": "/src/components"
+  },
+  "/src/components/Header.js": {
+    "name": "Header.js",
+    "path": "/Users/naveen/code/react-crypto-tracker/src/components/Header.js",
+    "size": 1674,
+    "type": ".js",
+    "totalLazyLoaded": [],
+    "canBeLazyLoaded": [],
+    "parentFolder": "/src/components"
+  },
+  "/src/components/SelectButton.js": {
+    "name": "SelectButton.js",
+    "path": "/Users/naveen/code/react-crypto-tracker/src/components/SelectButton.js",
+    "size": 778,
+    "type": ".js",
+    "totalLazyLoaded": [],
+    "canBeLazyLoaded": [],
+    "parentFolder": "/src/components"
+  },
+  "/src/components": {
+    "name": "components",
+    "path": "/Users/naveen/code/react-crypto-tracker/src/components",
+    "size": 16198,
+    "noOfSubFolders": 1,
+    "noOfSubFiles": 6,
+    "totalLazyLoaded": 0,
+    "canBeLazyLoaded": 0,
+    "foldersInside": [
+      "/src/components/Banner"
+    ],
+    "filesInside": [
+      "/src/components/CoinInfo.js",
+      "/src/components/CoinsTable.js",
+      "/src/components/Header.js",
+      "/src/components/SelectButton.js"
+    ],
+    "parentFolder": "/src"
+  },
+  "/src/config/api.js": {
+    "name": "api.js",
+    "path": "/Users/naveen/code/react-crypto-tracker/src/config/api.js",
+    "size": 619,
+    "type": ".js",
+    "totalLazyLoaded": [],
+    "canBeLazyLoaded": [],
+    "parentFolder": "/src/config"
+  },
+  "/src/config/data.js": {
+    "name": "data.js",
+    "path": "/Users/naveen/code/react-crypto-tracker/src/config/data.js",
+    "size": 215,
+    "type": ".js",
+    "totalLazyLoaded": [],
+    "canBeLazyLoaded": [],
+    "parentFolder": "/src/config"
+  },
+  "/src/config": {
+    "name": "config",
+    "path": "/Users/naveen/code/react-crypto-tracker/src/config",
+    "size": 834,
+    "noOfSubFolders": 0,
+    "noOfSubFiles": 2,
+    "totalLazyLoaded": 0,
+    "canBeLazyLoaded": 0,
+    "foldersInside": [],
+    "filesInside": [
+      "/src/config/api.js",
+      "/src/config/data.js"
+    ],
+    "parentFolder": "/src"
+  },
+  "/src/index.css": {
+    "name": "index.css",
+    "path": "/Users/naveen/code/react-crypto-tracker/src/index.css",
+    "size": 366,
+    "type": ".css",
+    "totalLazyLoaded": [],
+    "canBeLazyLoaded": [],
+    "parentFolder": "/src"
+  },
+  "/src/index.js": {
+    "name": "index.js",
+    "path": "/Users/naveen/code/react-crypto-tracker/src/index.js",
+    "size": 361,
+    "type": ".js",
+    "totalLazyLoaded": [],
+    "canBeLazyLoaded": [],
+    "parentFolder": "/src"
+  },
+  "/src/temp.js": {
+    "name": "temp.js",
+    "path": "/Users/naveen/code/react-crypto-tracker/src/temp.js",
+    "size": 880,
+    "type": ".js",
+    "totalLazyLoaded": [
+      {
+        "name": "Homepage",
+        "path": "/src/Pages/HomePage"
+      },
+      {
+        "name": "CoinPage",
+        "path": "/src/Pages/CoinPage"
+      }
+    ],
+    "canBeLazyLoaded": [],
+    "parentFolder": "/src"
+  },
+  "/src": {
+    "name": "src",
+    "path": "/Users/naveen/code/react-crypto-tracker/src",
+    "size": 25081,
+    "noOfSubFolders": 4,
+    "noOfSubFiles": 18,
+    "totalLazyLoaded": 2,
+    "canBeLazyLoaded": 2,
+    "foldersInside": [
+      "/src/Pages",
+      "/src/components",
+      "/src/config"
+    ],
+    "filesInside": [
+      "/src/App.css",
+      "/src/App.js",
+      "/src/CryptoContext.js",
+      "/src/index.css",
+      "/src/index.js",
+      "/src/temp.js"
+    ],
+    "parentFolder": "/"
+  },
+  "/yarn.lock": {
+    "name": "yarn.lock",
+    "path": "/Users/naveen/code/react-crypto-tracker/yarn.lock",
+    "size": 555662,
+    "type": ".lock",
+    "totalLazyLoaded": [],
+    "canBeLazyLoaded": [],
+    "parentFolder": "/"
+  },
+  "/": {
+    "name": "react-crypto-tracker",
+    "path": "/Users/naveen/code/react-crypto-tracker",
+    "size": 2624966,
+    "noOfSubFolders": 6,
+    "noOfSubFiles": 30,
+    "totalLazyLoaded": 2,
+    "canBeLazyLoaded": 2,
+    "foldersInside": [
+      "/public",
+      "/src"
+    ],
+    "filesInside": [
+      "/component-tree.txt",
+      "/data.json",
+      "/package-lock.json",
+      "/package.json",
+      "/yarn.lock"
+    ],
+    "parentFolder": "/"
+  }
+}
