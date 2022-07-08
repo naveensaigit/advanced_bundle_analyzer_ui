@@ -1,10 +1,9 @@
-import { createTheme, ThemeProvider }
-from '@mui/material/styles';
+import { useRouter } from 'next/router';
+import { createTheme, ThemeProvider }from '@mui/material/styles';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import Dirent from './Dirent';
 import {data} from "./Homepage";
-import { Dispatch, SetStateAction} from 'react';
 
 declare module '@mui/material/styles' {
   interface BreakpointOverrides {
@@ -29,8 +28,8 @@ const gridTheme = createTheme({
   }
 });
 
-function GridView({dataObj, route, setRoute}: {dataObj: data, route: string, setRoute: Dispatch<SetStateAction<string>>}) {
-  const routeData = dataObj[route];
+function GridView({dataObj, route}: {dataObj: data, route: string}) {
+  const router = useRouter(), routeData = dataObj[route];
 
   return (
     <ThemeProvider theme={gridTheme}>
@@ -42,7 +41,7 @@ function GridView({dataObj, route, setRoute}: {dataObj: data, route: string, set
               s1={12} s2={6} s3={4} s4={3}
               s5={2.4} s6={2} s7={1.7143} s8={1.5}
               s9={1.3333} s10={1.2} s11={1.0909} s12={1}
-              onClick={() => setRoute(entry)}
+              onClick={() => router.push(entry)}
             >
               <Dirent entry={dataObj[entry]}/>
             </Grid>

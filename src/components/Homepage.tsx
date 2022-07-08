@@ -1,7 +1,7 @@
-import { useState } from 'react';
 import Header from './Header/Header';
 import GridView from "./GridView";
 import dataObj from "./data.json";
+
 // Type to store the components in totalLazyLoaded or canBeLazyLoaded
 export type component = {
   name: string,
@@ -41,13 +41,12 @@ export type data = {
   [key: string]: fileData | folderData
 }
 
-function Homepage({path}: {path: string}) {
-  const [route, setRoute] = useState("/");
-  console.log(route);
+function Homepage({route}: {route: string}) {
+
   return (
     <>
-      <Header path={path} route={route} setRoute={setRoute}/>
-      <GridView dataObj={dataObj} route={route} setRoute={setRoute}/>
+      <Header route={route}/>
+      <GridView dataObj={dataObj} route={route}/>
     </>
   );
 }

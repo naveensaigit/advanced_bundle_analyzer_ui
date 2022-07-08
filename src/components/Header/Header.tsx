@@ -1,4 +1,5 @@
 import * as React from "react";
+import { useRouter } from 'next/router';
 import { styled, alpha } from "@mui/material/styles";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
@@ -14,7 +15,6 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import FormatListBulletedIcon from "@mui/icons-material/FormatListBulleted";
 import LightModeIcon from "@mui/icons-material/LightMode";
 import MoreIcon from "@mui/icons-material/MoreVert";
-import { Dispatch, SetStateAction} from 'react';
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import getPath from "./path";
 
@@ -67,14 +67,9 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
   },
 }));
 
-type props = {
-  path : string,
-  route: string,
-  setRoute: Dispatch<SetStateAction<string>>
-};
+export default function PrimarySearchAppBar({route}: {route: string}) {
+  const router = useRouter();
 
-export default function PrimarySearchAppBar(props : props) {
-  const {route, setRoute} = props;
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] =
     React.useState<null | HTMLElement>(null);
@@ -141,9 +136,9 @@ export default function PrimarySearchAppBar(props : props) {
               onClick={() => {
                 const ind = route.lastIndexOf("/");
                 if(ind > 0)
-                  setRoute(route.slice(0, ind))
+                  router.push(route.slice(0, ind))
                 else
-                  setRoute("/")
+                  router.push("/")
               }}
             >
               <ArrowBackIcon/>

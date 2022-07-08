@@ -7,14 +7,14 @@ const page: NextPage = () => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const router = useRouter();
   const { params } = router.query;
-  let path = "root/";
+  let route = "/";
 
   if(params !== undefined  &&  typeof params !== 'string')
-    path += params.join("/");
+    route += params.join("/");
 
   return (
     <div className="App bg-[#282828] text-[#F1F1F1] pt-2">
-      <Homepage path={path}/>
+      <Homepage route={route}/>
     </div>
   )
 };
