@@ -4,7 +4,7 @@ import Tooltip, { TooltipProps, tooltipClasses } from '@mui/material/Tooltip';
 import FolderIcon from '@mui/icons-material/Folder';
 import CodeIcon from '@mui/icons-material/Code';
 import Info from './Info';
-import { fileData, folderData } from "./Homepage";
+import { fileData, folderData } from "./Browser";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#282828',

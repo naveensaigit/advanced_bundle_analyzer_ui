@@ -1,4 +1,4 @@
-import { data } from "../Homepage";
+import { data } from "../Browser";
 
 let subFiles : string[] = [];
 

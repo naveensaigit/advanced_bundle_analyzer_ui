@@ -136,9 +136,9 @@ export default function PrimarySearchAppBar({route}: {route: string}) {
               onClick={() => {
                 const ind = route.lastIndexOf("/");
                 if(ind > 0)
-                  router.push(route.slice(0, ind))
+                  router.push("/browse" + route.slice(0, ind))
                 else
-                  router.push("/")
+                  router.push("/browse")
               }}
             >
               <ArrowBackIcon/>

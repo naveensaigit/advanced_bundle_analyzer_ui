@@ -1,8 +1,7 @@
 import type { NextPage } from "next";
-import Homepage from "../src/components/Homepage";
 import React from "react";
 import { useRouter } from "next/router";
-import Review from "../src/components/Review/Review";
+import Browser from "../../src/components/Browser";
 
 const page: NextPage = () => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
@@ -10,18 +9,12 @@ const page: NextPage = () => {
   const { params } = router.query;
   let route = "/";
 
-  let f = true;
-
-  if (params !== undefined && typeof params !== "string") {
-    f &&= params[params.length - 1] !== ":review";
+  if (params !== undefined && typeof params !== "string")
     route += params.join("/");
-  }
-
-  if (!f) route = route.slice(0, route.lastIndexOf("/"));
 
   return (
     <div className="App bg-[#282828] text-[#F1F1F1]">
-      {f ? <Homepage route={route} /> : <Review route={route} />}
+      <Browser route={route} />
     </div>
   );
 };

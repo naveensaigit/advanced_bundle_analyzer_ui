@@ -1,7 +1,7 @@
 import { Chart, ArcElement, Tooltip, Title, Legend } from "chart.js";
 Chart.register(ArcElement, Tooltip, Title, Legend);
 import { Pie } from "react-chartjs-2";
-import { data } from "../Homepage";
+import { data } from "../Browser";
 
 function PieChartComponent({dataObj, route}: {dataObj: data;route: string;}) {
   const labels = ["Already Lazy Loaded", "Can Be Lazy Loaded"];

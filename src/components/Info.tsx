@@ -1,4 +1,4 @@
-import { fileData, folderData } from "./Homepage";
+import { fileData, folderData } from "./Browser";
 
 function formatSize(bytes: number, decimals: number = 2): string {
   if (bytes === 0) return '0 Bytes';
