@@ -30,6 +30,7 @@ const gridTheme = createTheme({
 
 function GridView({dataObj, route}: {dataObj: data, route: string}) {
   const router = useRouter(), routeData = dataObj[route];
+  let clicks = 0;
 
   return (
     <ThemeProvider theme={gridTheme}>
@@ -41,7 +42,20 @@ function GridView({dataObj, route}: {dataObj: data, route: string}) {
               s1={12} s2={6} s3={4} s4={3}
               s5={2.4} s6={2} s7={1.7143} s8={1.5}
               s9={1.3333} s10={1.2} s11={1.0909} s12={1}
-              onClick={() => router.push(entry)}
+              onClick={(event) => {
+                clicks++;
+                if (clicks == 1) {
+                  setTimeout(function(){
+                    if(clicks == 1) {
+                      entry += '/:review' 
+                      router.push(entry);
+                    } else {
+                      router.push(entry);
+                    }
+                    clicks = 0;
+                  }, 300);
+                }
+              }}
             >
               <Dirent entry={dataObj[entry]}/>
             </Grid>
@@ -52,6 +66,21 @@ function GridView({dataObj, route}: {dataObj: data, route: string}) {
               s1={12} s2={6} s3={4} s4={3}
               s5={2.4} s6={2} s7={1.7143} s8={1.5}
               s9={1.3333} s10={1.2} s11={1.0909} s12={1}
+              onClick={(event) => {
+                clicks++;
+                if (clicks == 1) {
+                  setTimeout(function(){
+                    if(clicks == 1) {
+                      entry += '/:review' 
+                      router.push(entry);
+                    } else {
+                      console.log('Double Clicked File')
+                      // router.push(entry);
+                    }
+                    clicks = 0;
+                  }, 300);
+                }
+              }}
             >
               <Dirent entry={dataObj[entry]}/>
             </Grid>

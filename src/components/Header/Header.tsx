@@ -148,8 +148,7 @@ export default function PrimarySearchAppBar({route}: {route: string}) {
               noWrap
               align="left"
               component="span"
-              sx={{ flexGrow: 1 }}
-              fontFamily="Karla"
+              sx={{ flexGrow: 1}}
             >
               {getPath(route)}
             </Typography>

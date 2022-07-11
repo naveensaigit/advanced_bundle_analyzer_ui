@@ -11,7 +11,7 @@ const Item = styled(Paper)(({ theme }) => ({
   ...theme.typography.body2,
   color: "#F1F1F1",
   height: "120px",
-  width: "150px"
+  width: "150px",
 }));
 
 const InfoTooltip = styled(({ className, ...props }: TooltipProps) => (

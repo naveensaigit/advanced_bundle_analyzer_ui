@@ -1,35 +1,40 @@
 {
   "rootPath": {
     "name": "rootPath",
-    "path": "/Users/naveen/code/react-crypto-tracker",
+    "path": "/Users/sprinklr/Desktop/practice/New folder/react-crypto-tracker",
     "size": 0,
     "type": "",
     "totalLazyLoaded": [],
     "canBeLazyLoaded": [],
     "parentFolder": "/.."
   },
-  "/component-tree.txt": {
-    "name": "component-tree.txt",
-    "path": "/Users/naveen/code/react-crypto-tracker/component-tree.txt",
-    "size": 238,
-    "type": ".txt",
-    "totalLazyLoaded": [],
-    "canBeLazyLoaded": [],
-    "parentFolder": "/"
-  },
-  "/data.json": {
-    "name": "data.json",
-    "path": "/Users/naveen/code/react-crypto-tracker/data.json",
-    "size": 11313,
+  "/.vscode/settings.json": {
+    "name": "settings.json",
+    "path": "C:/Users/Sprinklr/Desktop/practice/New folder/react-crypto-tracker/.vscode/settings.json",
+    "size": 76,
     "type": ".json",
     "totalLazyLoaded": [],
     "canBeLazyLoaded": [],
+    "parentFolder": "/.vscode"
+  },
+  "/.vscode": {
+    "name": ".vscode",
+    "path": "C:/Users/Sprinklr/Desktop/practice/New folder/react-crypto-tracker/.vscode",
+    "size": 76,
+    "noOfSubFolders": 0,
+    "noOfSubFiles": 1,
+    "totalLazyLoaded": 0,
+    "canBeLazyLoaded": 0,
+    "foldersInside": [],
+    "filesInside": [
+      "/.vscode/settings.json"
+    ],
     "parentFolder": "/"
   },
   "/package-lock.json": {
     "name": "package-lock.json",
-    "path": "/Users/naveen/code/react-crypto-tracker/package-lock.json",
-    "size": 1666887,
+    "path": "C:/Users/Sprinklr/Desktop/practice/New folder/react-crypto-tracker/package-lock.json",
+    "size": 1646820,
     "type": ".json",
     "totalLazyLoaded": [],
     "canBeLazyLoaded": [],
@@ -37,8 +42,8 @@
   },
   "/package.json": {
     "name": "package.json",
-    "path": "/Users/naveen/code/react-crypto-tracker/package.json",
-    "size": 1255,
+    "path": "C:/Users/Sprinklr/Desktop/practice/New folder/react-crypto-tracker/package.json",
+    "size": 1307,
     "type": ".json",
     "totalLazyLoaded": [],
     "canBeLazyLoaded": [],
@@ -46,7 +51,7 @@
   },
   "/public/banner2.jpg": {
     "name": "banner2.jpg",
-    "path": "/Users/naveen/code/react-crypto-tracker/public/banner2.jpg",
+    "path": "C:/Users/Sprinklr/Desktop/practice/New folder/react-crypto-tracker/public/banner2.jpg",
     "size": 343365,
     "type": ".jpg",
     "totalLazyLoaded": [],
@@ -55,7 +60,7 @@
   },
   "/public/favicon.ico": {
     "name": "favicon.ico",
-    "path": "/Users/naveen/code/react-crypto-tracker/public/favicon.ico",
+    "path": "C:/Users/Sprinklr/Desktop/practice/New folder/react-crypto-tracker/public/favicon.ico",
     "size": 3870,
     "type": ".ico",
     "totalLazyLoaded": [],
@@ -64,8 +69,8 @@
   },
   "/public/index.html": {
     "name": "index.html",
-    "path": "/Users/naveen/code/react-crypto-tracker/public/index.html",
-    "size": 1725,
+    "path": "C:/Users/Sprinklr/Desktop/practice/New folder/react-crypto-tracker/public/index.html",
+    "size": 1768,
     "type": ".html",
     "totalLazyLoaded": [],
     "canBeLazyLoaded": [],
@@ -73,7 +78,7 @@
   },
   "/public/logo192.png": {
     "name": "logo192.png",
-    "path": "/Users/naveen/code/react-crypto-tracker/public/logo192.png",
+    "path": "C:/Users/Sprinklr/Desktop/practice/New folder/react-crypto-tracker/public/logo192.png",
     "size": 5347,
     "type": ".png",
     "totalLazyLoaded": [],
@@ -82,7 +87,7 @@
   },
   "/public/logo512.png": {
     "name": "logo512.png",
-    "path": "/Users/naveen/code/react-crypto-tracker/public/logo512.png",
+    "path": "C:/Users/Sprinklr/Desktop/practice/New folder/react-crypto-tracker/public/logo512.png",
     "size": 9664,
     "type": ".png",
     "totalLazyLoaded": [],
@@ -91,8 +96,8 @@
   },
   "/public/manifest.json": {
     "name": "manifest.json",
-    "path": "/Users/naveen/code/react-crypto-tracker/public/manifest.json",
-    "size": 492,
+    "path": "C:/Users/Sprinklr/Desktop/practice/New folder/react-crypto-tracker/public/manifest.json",
+    "size": 517,
     "type": ".json",
     "totalLazyLoaded": [],
     "canBeLazyLoaded": [],
@@ -100,8 +105,8 @@
   },
   "/public/robots.txt": {
     "name": "robots.txt",
-    "path": "/Users/naveen/code/react-crypto-tracker/public/robots.txt",
-    "size": 67,
+    "path": "C:/Users/Sprinklr/Desktop/practice/New folder/react-crypto-tracker/public/robots.txt",
+    "size": 70,
     "type": ".txt",
     "totalLazyLoaded": [],
     "canBeLazyLoaded": [],
@@ -109,8 +114,8 @@
   },
   "/public": {
     "name": "public",
-    "path": "/Users/naveen/code/react-crypto-tracker/public",
-    "size": 364530,
+    "path": "C:/Users/Sprinklr/Desktop/practice/New folder/react-crypto-tracker/public",
+    "size": 364601,
     "noOfSubFolders": 0,
     "noOfSubFiles": 7,
     "totalLazyLoaded": 0,
@@ -129,8 +134,8 @@
   },
   "/src/App.css": {
     "name": "App.css",
-    "path": "/Users/naveen/code/react-crypto-tracker/src/App.css",
-    "size": 232,
+    "path": "C:/Users/Sprinklr/Desktop/practice/New folder/react-crypto-tracker/src/App.css",
+    "size": 245,
     "type": ".css",
     "totalLazyLoaded": [],
     "canBeLazyLoaded": [],
@@ -138,13 +143,13 @@
   },
   "/src/App.js": {
     "name": "App.js",
-    "path": "/Users/naveen/code/react-crypto-tracker/src/App.js",
-    "size": 852,
+    "path": "C:/Users/Sprinklr/Desktop/practice/New folder/react-crypto-tracker/src/App.js",
+    "size": 728,
     "type": ".js",
     "totalLazyLoaded": [],
     "canBeLazyLoaded": [
       {
-        "name": "HomePage",
+        "name": "Homepage",
         "path": "/src/Pages/HomePage"
       },
       {
@@ -154,72 +159,10 @@
     ],
     "parentFolder": "/src"
   },
-  "/src/CryptoContext.js": {
-    "name": "CryptoContext.js",
-    "path": "/Users/naveen/code/react-crypto-tracker/src/CryptoContext.js",
-    "size": 610,
-    "type": ".js",
-    "totalLazyLoaded": [],
-    "canBeLazyLoaded": [],
-    "parentFolder": "/src"
-  },
-  "/src/Pages/CoinPage.js": {
-    "name": "CoinPage.js",
-    "path": "/Users/naveen/code/react-crypto-tracker/src/Pages/CoinPage.js",
-    "size": 4299,
-    "type": ".js",
-    "totalLazyLoaded": [],
-    "canBeLazyLoaded": [],
-    "parentFolder": "/src/Pages"
-  },
-  "/src/Pages/HomePage.js": {
-    "name": "HomePage.js",
-    "path": "/Users/naveen/code/react-crypto-tracker/src/Pages/HomePage.js",
-    "size": 329,
-    "type": ".js",
-    "totalLazyLoaded": [],
-    "canBeLazyLoaded": [],
-    "parentFolder": "/src/Pages"
-  },
-  "/src/Pages/MoviePage.js": {
-    "name": "MoviePage.js",
-    "path": "/Users/naveen/code/react-crypto-tracker/src/Pages/MoviePage.js",
-    "size": 58,
-    "type": ".js",
-    "totalLazyLoaded": [],
-    "canBeLazyLoaded": [],
-    "parentFolder": "/src/Pages"
-  },
-  "/src/Pages/OldMoviePage.js": {
-    "name": "OldMoviePage.js",
-    "path": "/Users/naveen/code/react-crypto-tracker/src/Pages/OldMoviePage.js",
-    "size": 62,
-    "type": ".js",
-    "totalLazyLoaded": [],
-    "canBeLazyLoaded": [],
-    "parentFolder": "/src/Pages"
-  },
-  "/src/Pages": {
-    "name": "Pages",
-    "path": "/Users/naveen/code/react-crypto-tracker/src/Pages",
-    "size": 4748,
-    "noOfSubFolders": 0,
-    "noOfSubFiles": 4,
-    "totalLazyLoaded": 0,
-    "canBeLazyLoaded": 0,
-    "foldersInside": [],
-    "filesInside": [
-      "/src/Pages/CoinPage.js",
-      "/src/Pages/HomePage.js",
-      "/src/Pages/MoviePage.js",
-      "/src/Pages/OldMoviePage.js"
-    ],
-    "parentFolder": "/src"
-  },
   "/src/components/Banner/Banner.js": {
     "name": "Banner.js",
-    "path": "/Users/naveen/code/react-crypto-tracker/src/components/Banner/Banner.js",
-    "size": 1443,
+    "path": "C:/Users/Sprinklr/Desktop/practice/New folder/react-crypto-tracker/src/components/Banner/Banner.js",
+    "size": 1506,
     "type": ".js",
     "totalLazyLoaded": [],
     "canBeLazyLoaded": [],
@@ -227,8 +170,8 @@
   },
   "/src/components/Banner/Carousel.js": {
     "name": "Carousel.js",
-    "path": "/Users/naveen/code/react-crypto-tracker/src/components/Banner/Carousel.js",
-    "size": 2422,
+    "path": "C:/Users/Sprinklr/Desktop/practice/New folder/react-crypto-tracker/src/components/Banner/Carousel.js",
+    "size": 2523,
     "type": ".js",
     "totalLazyLoaded": [],
     "canBeLazyLoaded": [],
@@ -236,8 +179,8 @@
   },
   "/src/components/Banner": {
     "name": "Banner",
-    "path": "/Users/naveen/code/react-crypto-tracker/src/components/Banner",
-    "size": 3865,
+    "path": "C:/Users/Sprinklr/Desktop/practice/New folder/react-crypto-tracker/src/components/Banner",
+    "size": 4029,
     "noOfSubFolders": 0,
     "noOfSubFiles": 2,
     "totalLazyLoaded": 0,
@@ -251,8 +194,8 @@
   },
   "/src/components/CoinInfo.js": {
     "name": "CoinInfo.js",
-    "path": "/Users/naveen/code/react-crypto-tracker/src/components/CoinInfo.js",
-    "size": 3373,
+    "path": "C:/Users/Sprinklr/Desktop/practice/New folder/react-crypto-tracker/src/components/CoinInfo.js",
+    "size": 3501,
     "type": ".js",
     "totalLazyLoaded": [],
     "canBeLazyLoaded": [],
@@ -260,8 +203,8 @@
   },
   "/src/components/CoinsTable.js": {
     "name": "CoinsTable.js",
-    "path": "/Users/naveen/code/react-crypto-tracker/src/components/CoinsTable.js",
-    "size": 6508,
+    "path": "C:/Users/Sprinklr/Desktop/practice/New folder/react-crypto-tracker/src/components/CoinsTable.js",
+    "size": 6720,
     "type": ".js",
     "totalLazyLoaded": [],
     "canBeLazyLoaded": [],
@@ -269,8 +212,8 @@
   },
   "/src/components/Header.js": {
     "name": "Header.js",
-    "path": "/Users/naveen/code/react-crypto-tracker/src/components/Header.js",
-    "size": 1674,
+    "path": "C:/Users/Sprinklr/Desktop/practice/New folder/react-crypto-tracker/src/components/Header.js",
+    "size": 1747,
     "type": ".js",
     "totalLazyLoaded": [],
     "canBeLazyLoaded": [],
@@ -278,8 +221,8 @@
   },
   "/src/components/SelectButton.js": {
     "name": "SelectButton.js",
-    "path": "/Users/naveen/code/react-crypto-tracker/src/components/SelectButton.js",
-    "size": 778,
+    "path": "C:/Users/Sprinklr/Desktop/practice/New folder/react-crypto-tracker/src/components/SelectButton.js",
+    "size": 812,
     "type": ".js",
     "totalLazyLoaded": [],
     "canBeLazyLoaded": [],
@@ -287,8 +230,8 @@
   },
   "/src/components": {
     "name": "components",
-    "path": "/Users/naveen/code/react-crypto-tracker/src/components",
-    "size": 16198,
+    "path": "C:/Users/Sprinklr/Desktop/practice/New folder/react-crypto-tracker/src/components",
+    "size": 16809,
     "noOfSubFolders": 1,
     "noOfSubFiles": 6,
     "totalLazyLoaded": 0,
@@ -306,8 +249,8 @@
   },
   "/src/config/api.js": {
     "name": "api.js",
-    "path": "/Users/naveen/code/react-crypto-tracker/src/config/api.js",
-    "size": 619,
+    "path": "C:/Users/Sprinklr/Desktop/practice/New folder/react-crypto-tracker/src/config/api.js",
+    "size": 630,
     "type": ".js",
     "totalLazyLoaded": [],
     "canBeLazyLoaded": [],
@@ -315,8 +258,8 @@
   },
   "/src/config/data.js": {
     "name": "data.js",
-    "path": "/Users/naveen/code/react-crypto-tracker/src/config/data.js",
-    "size": 215,
+    "path": "C:/Users/Sprinklr/Desktop/practice/New folder/react-crypto-tracker/src/config/data.js",
+    "size": 233,
     "type": ".js",
     "totalLazyLoaded": [],
     "canBeLazyLoaded": [],
@@ -324,8 +267,8 @@
   },
   "/src/config": {
     "name": "config",
-    "path": "/Users/naveen/code/react-crypto-tracker/src/config",
-    "size": 834,
+    "path": "C:/Users/Sprinklr/Desktop/practice/New folder/react-crypto-tracker/src/config",
+    "size": 863,
     "noOfSubFolders": 0,
     "noOfSubFiles": 2,
     "totalLazyLoaded": 0,
@@ -337,10 +280,19 @@
     ],
     "parentFolder": "/src"
   },
+  "/src/CryptoContext.js": {
+    "name": "CryptoContext.js",
+    "path": "C:/Users/Sprinklr/Desktop/practice/New folder/react-crypto-tracker/src/CryptoContext.js",
+    "size": 635,
+    "type": ".js",
+    "totalLazyLoaded": [],
+    "canBeLazyLoaded": [],
+    "parentFolder": "/src"
+  },
   "/src/index.css": {
     "name": "index.css",
-    "path": "/Users/naveen/code/react-crypto-tracker/src/index.css",
-    "size": 366,
+    "path": "C:/Users/Sprinklr/Desktop/practice/New folder/react-crypto-tracker/src/index.css",
+    "size": 379,
     "type": ".css",
     "totalLazyLoaded": [],
     "canBeLazyLoaded": [],
@@ -348,17 +300,60 @@
   },
   "/src/index.js": {
     "name": "index.js",
-    "path": "/Users/naveen/code/react-crypto-tracker/src/index.js",
-    "size": 361,
+    "path": "C:/Users/Sprinklr/Desktop/practice/New folder/react-crypto-tracker/src/index.js",
+    "size": 376,
     "type": ".js",
     "totalLazyLoaded": [],
     "canBeLazyLoaded": [],
     "parentFolder": "/src"
   },
+  "/src/Pages/CoinPage.js": {
+    "name": "CoinPage.js",
+    "path": "C:/Users/Sprinklr/Desktop/practice/New folder/react-crypto-tracker/src/Pages/CoinPage.js",
+    "size": 4457,
+    "type": ".js",
+    "totalLazyLoaded": [],
+    "canBeLazyLoaded": [],
+    "parentFolder": "/src/Pages"
+  },
+  "/src/Pages/HomePage.js": {
+    "name": "HomePage.js",
+    "path": "C:/Users/Sprinklr/Desktop/practice/New folder/react-crypto-tracker/src/Pages/HomePage.js",
+    "size": 264,
+    "type": ".js",
+    "totalLazyLoaded": [],
+    "canBeLazyLoaded": [],
+    "parentFolder": "/src/Pages"
+  },
+  "/src/Pages/namedExports.js": {
+    "name": "namedExports.js",
+    "path": "C:/Users/Sprinklr/Desktop/practice/New folder/react-crypto-tracker/src/Pages/namedExports.js",
+    "size": 4700,
+    "type": ".js",
+    "totalLazyLoaded": [],
+    "canBeLazyLoaded": [],
+    "parentFolder": "/src/Pages"
+  },
+  "/src/Pages": {
+    "name": "Pages",
+    "path": "C:/Users/Sprinklr/Desktop/practice/New folder/react-crypto-tracker/src/Pages",
+    "size": 9421,
+    "noOfSubFolders": 0,
+    "noOfSubFiles": 3,
+    "totalLazyLoaded": 0,
+    "canBeLazyLoaded": 0,
+    "foldersInside": [],
+    "filesInside": [
+      "/src/Pages/CoinPage.js",
+      "/src/Pages/HomePage.js",
+      "/src/Pages/namedExports.js"
+    ],
+    "parentFolder": "/src"
+  },
   "/src/temp.js": {
     "name": "temp.js",
-    "path": "/Users/naveen/code/react-crypto-tracker/src/temp.js",
-    "size": 880,
+    "path": "C:/Users/Sprinklr/Desktop/practice/New folder/react-crypto-tracker/src/temp.js",
+    "size": 916,
     "type": ".js",
     "totalLazyLoaded": [
       {
@@ -375,16 +370,16 @@
   },
   "/src": {
     "name": "src",
-    "path": "/Users/naveen/code/react-crypto-tracker/src",
-    "size": 25081,
+    "path": "C:/Users/Sprinklr/Desktop/practice/New folder/react-crypto-tracker/src",
+    "size": 30372,
     "noOfSubFolders": 4,
-    "noOfSubFiles": 18,
+    "noOfSubFiles": 17,
     "totalLazyLoaded": 2,
     "canBeLazyLoaded": 2,
     "foldersInside": [
-      "/src/Pages",
       "/src/components",
-      "/src/config"
+      "/src/config",
+      "/src/Pages"
     ],
     "filesInside": [
       "/src/App.css",
@@ -398,8 +393,8 @@
   },
   "/yarn.lock": {
     "name": "yarn.lock",
-    "path": "/Users/naveen/code/react-crypto-tracker/yarn.lock",
-    "size": 555662,
+    "path": "C:/Users/Sprinklr/Desktop/practice/New folder/react-crypto-tracker/yarn.lock",
+    "size": 534805,
     "type": ".lock",
     "totalLazyLoaded": [],
     "canBeLazyLoaded": [],
@@ -407,19 +402,18 @@
   },
   "/": {
     "name": "react-crypto-tracker",
-    "path": "/Users/naveen/code/react-crypto-tracker",
-    "size": 2624966,
-    "noOfSubFolders": 6,
-    "noOfSubFiles": 30,
+    "path": "C:/Users/Sprinklr/Desktop/practice/New folder/react-crypto-tracker",
+    "size": 2577981,
+    "noOfSubFolders": 7,
+    "noOfSubFiles": 28,
     "totalLazyLoaded": 2,
     "canBeLazyLoaded": 2,
     "foldersInside": [
+      "/.vscode",
       "/public",
       "/src"
     ],
     "filesInside": [
-      "/component-tree.txt",
-      "/data.json",
       "/package-lock.json",
       "/package.json",
       "/yarn.lock"

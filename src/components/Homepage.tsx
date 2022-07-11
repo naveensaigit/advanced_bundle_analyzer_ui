@@ -42,7 +42,6 @@ export type data = {
 }
 
 function Homepage({route}: {route: string}) {
-
   return (
     <>
       <Header route={route}/>
