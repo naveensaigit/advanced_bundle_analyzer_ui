@@ -1,4 +1,5 @@
 import * as React from "react";
+import { useRouter } from 'next/router';
 import { styled, alpha } from "@mui/material/styles";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
@@ -21,7 +22,7 @@ const darkTheme = createTheme({
   palette: {
     mode: "dark",
     primary: {
-      main: "#1976d2",
+      main: "#000000",
     },
   },
 });
@@ -29,13 +30,13 @@ const darkTheme = createTheme({
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
   borderRadius: theme.shape.borderRadius,
-  backgroundColor: alpha(theme.palette.common.white, 0.15),
+  backgroundColor: alpha(theme.palette.common.white, 0.05),
   "&:hover": {
-    backgroundColor: alpha(theme.palette.common.white, 0.25),
+    backgroundColor: alpha(theme.palette.common.white, 0.10),
   },
   marginRight: theme.spacing(2),
   marginLeft: 0,
-  width: "100%",
+  width: "auto",
   [theme.breakpoints.up("sm")]: {
     marginLeft: theme.spacing(3),
     width: "auto",
@@ -66,7 +67,9 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
   },
 }));
 
-export default function PrimarySearchAppBar() {
+export default function PrimarySearchAppBar({route}: {route: string}) {
+  const router = useRouter();
+
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] =
     React.useState<null | HTMLElement>(null);
@@ -74,24 +77,15 @@ export default function PrimarySearchAppBar() {
   const isMenuOpen = Boolean(anchorEl);
   const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
 
-  const handleProfileMenuOpen = (event: React.MouseEvent<HTMLElement>) => {
-    setAnchorEl(event.currentTarget);
-  };
-
   const handleMobileMenuClose = () => {
     setMobileMoreAnchorEl(null);
-  };
-
-  const handleMenuClose = () => {
-    setAnchorEl(null);
-    handleMobileMenuClose();
   };
 
   const handleMobileMenuOpen = (event: React.MouseEvent<HTMLElement>) => {
     setMobileMoreAnchorEl(event.currentTarget);
   };
 
-  const mobileMenuId = "primary-search-account-menu-mobile";
+  const mobileMenuId = "primary-menu-mobile";
   const renderMobileMenu = (
     <Menu
       anchorEl={mobileMoreAnchorEl}
@@ -115,22 +109,13 @@ export default function PrimarySearchAppBar() {
         <p>List View</p>
       </MenuItem>
       <MenuItem>
-        <IconButton
-          size="large"
-          aria-label="show 17 new notifications"
-          color="inherit"
-        >
+        <IconButton size="large" color="inherit">
           <LightModeIcon />
         </IconButton>
         <p>Light Mode</p>
       </MenuItem>
-      <MenuItem onClick={handleProfileMenuOpen}>
-        <IconButton
-          size="large"
-          aria-label="Github repo"
-          aria-haspopup="true"
-          color="inherit"
-        >
+      <MenuItem>
+        <IconButton size="large" aria-haspopup="true" color="inherit">
           <GitHubIcon />
         </IconButton>
         <p>Github repo</p>
@@ -141,14 +126,20 @@ export default function PrimarySearchAppBar() {
   return (
     <ThemeProvider theme={darkTheme}>
       <Box sx={{ flexGrow: 1 }}>
-        <AppBar position="static">
+        <AppBar position="static" sx={{ backgroundColor: "black" }}>
           <Toolbar>
             <IconButton
-              size="large"
+              size="medium"
               edge="start"
               color="inherit"
-              aria-label="open drawer"
-              sx={{ mr: 2 }}
+              sx={{ mr: 0.75 }}
+              onClick={() => {
+                const ind = route.lastIndexOf("/");
+                if(ind > 0)
+                  router.push(route.slice(0, ind))
+                else
+                  router.push("/")
+              }}
             >
               <ArrowBackIcon/>
             </IconButton>
@@ -160,10 +151,10 @@ export default function PrimarySearchAppBar() {
               sx={{ flexGrow: 1 }}
               fontFamily="Karla"
             >
-              {getPath("root/src/components")}
+              {getPath(route)}
             </Typography>
             <Box sx={{ flexGrow: 1 }} />
-            <Search>
+            <Search sx={{ mr: 2, border:0.5, borderRadius:5 }}>
               <SearchIconWrapper>
                 <SearchIcon />
               </SearchIconWrapper>
@@ -175,25 +166,19 @@ export default function PrimarySearchAppBar() {
 
             <Box sx={{ display: { xs: "none", md: "flex" } }}>
               <IconButton
-                size="large"
-                aria-label="show 4 new mails"
+                size="medium"
                 color="inherit"
+                sx={{ mr: 1, ml: 0.75 }}
               >
                 <FormatListBulletedIcon />
               </IconButton>
-              <IconButton
-                size="large"
-                aria-label=""
-                color="inherit"
-              >
+              <IconButton size="medium" color="inherit" sx={{ mr: 1 }}>
                 <LightModeIcon />
               </IconButton>
               <IconButton
-                size="large"
+                size="medium"
                 edge="end"
-                aria-label="Github repo"
                 aria-haspopup="true"
-                onClick={handleProfileMenuOpen}
                 color="inherit"
               >
                 <GitHubIcon />
@@ -201,8 +186,7 @@ export default function PrimarySearchAppBar() {
             </Box>
             <Box sx={{ display: { xs: "flex", md: "none" } }}>
               <IconButton
-                size="large"
-                aria-label="show more"
+                size="medium"
                 aria-controls={mobileMenuId}
                 aria-haspopup="true"
                 onClick={handleMobileMenuOpen}
