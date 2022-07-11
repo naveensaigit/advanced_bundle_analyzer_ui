@@ -126,7 +126,7 @@ export default function PrimarySearchAppBar({route}: {route: string}) {
   return (
     <ThemeProvider theme={darkTheme}>
       <Box sx={{ flexGrow: 1 }}>
-        <AppBar position="static" sx={{ backgroundColor: "black" }}>
+        <AppBar position="relative" sx={{ backgroundColor: "black" }}>
           <Toolbar>
             <IconButton
               size="medium"

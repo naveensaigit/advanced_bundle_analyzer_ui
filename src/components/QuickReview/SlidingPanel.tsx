@@ -26,10 +26,10 @@ export default function SlidingPanel({ visible, closePane, route }: Props) {
             open={visible}
             onClose={closePane}
             PaperProps={{
-              sx: { width: "25%", backgroundColor: "#282828" },
+              sx: { width: "25%", minWidth:'250px', maxWidth:'100%', backgroundColor: "#282828" },
             }}
           >
-            <Box sx={{ display: { xs: "none", md: "flex" } }}>
+            <Box sx={{ display: { md: "flex", backgroundColor:'#000000' } }}>
               <Typography
                 style={{marginTop:8, marginLeft:6}}
                 variant="h6"
