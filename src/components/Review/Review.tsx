@@ -8,9 +8,7 @@ export default function review({ route }: { route: string }) {
   return (
     <>
       <Header route={route + " : review"} />
-      <div style={{ width: "14%", minWidth: 180, margin: "auto", marginTop: 40, marginBottom: 60 }}>
-        <PieChartComponent dataObj={dataObj} route={route} />
-      </div>
+      <PieChartComponent dataObj={dataObj} route={route} />
       <FileDetails dataObj={dataObj} route={route} />
     </>
   );

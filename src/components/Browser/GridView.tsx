@@ -4,8 +4,7 @@ import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import Dirent from './Dirent';
 import { data } from "./Browser";
-import SlidingPanel from './QuickReview/SlidingPanel';
-import React from 'react'
+import SlidingPanel from '../Review/SlidingPanel';
 
 declare module '@mui/material/styles' {
   interface BreakpointOverrides {
@@ -33,35 +32,38 @@ const gridTheme = createTheme({
 function GridView({ dataObj, route }: { dataObj: data, route: string }) {
   const router = useRouter(), routeData = dataObj[route];
   let clicks = 0;
-  const [panelOpen, setPanelState] = React.useState(false);
-  const [routePath, setRoutePath] = React.useState('');
 
   return (
     <>
-      <SlidingPanel visible={panelOpen} closePane={() => setPanelState(false)} route={routePath} />
       <ThemeProvider theme={gridTheme}>
-        <Box className='grow mt-2'>
+        <SlidingPanel/>
+
+        <Box className='grow mt-3'>
           <Grid container>
-            {routeData.foldersInside.map((entry: string) =>
+
+          {routeData.foldersInside.map((entry: string) =>
               <Grid key={entry} className='grid justify-center items-center'
                 s1={12} s2={6} s3={4} s4={3}
                 s5={2.4} s6={2} s7={1.7143} s8={1.5}
                 s9={1.3333} s10={1.2} s11={1.0909} s12={1}
                 onClick={_ => {
                   clicks++;
-                  if (clicks == 1) {
+                  if (clicks === 1) {
                     setTimeout(function () {
-                      if (clicks == 1) {
-                        setPanelState(true);
-                        setRoutePath(entry);
-                      } else
+                      if (clicks === 1) {
+                        router.push({
+                          pathname: router.asPath,
+                          query: { review: entry },
+                        }, undefined, {shallow: true})
+                      }
+                      else
                         router.push('/browse' + entry);
                       clicks = 0;
                     }, 200);
                   }
                 }}
               >
-                <Dirent entry={dataObj[entry]} />
+                <Dirent entry={dataObj[entry]}/>
               </Grid>
             )}
 
@@ -72,18 +74,20 @@ function GridView({ dataObj, route }: { dataObj: data, route: string }) {
                 s9={1.3333} s10={1.2} s11={1.0909} s12={1}
                 onClick={_ => {
                   clicks++;
-                  if (clicks == 1) {
+                  if (clicks === 1) {
                     setTimeout(function () {
-                      if (clicks == 1) {
-                        setPanelState(true);
-                        setRoutePath(entry);
+                      if (clicks === 1) {
+                        router.push({
+                          pathname: router.asPath,
+                          query: { review: entry },
+                        }, undefined, {shallow: true})
                       }
                       clicks = 0;
                     }, 200);
                   }
                 }}
               >
-                <Dirent entry={dataObj[entry]} />
+                <Dirent entry={dataObj[entry]}/>
               </Grid>
             )}
 

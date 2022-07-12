@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import React from "react";
 import { useRouter } from "next/router";
-import Browser from "../../src/components/Browser";
+import Browser from "../../src/components/Browser/Browser";
 
 const page: NextPage = () => {
   // eslint-disable-next-line react-hooks/rules-of-hooks

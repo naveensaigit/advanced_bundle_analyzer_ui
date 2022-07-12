@@ -22,9 +22,19 @@ const darkTheme = createTheme({
   palette: {
     mode: "dark",
     primary: {
-      main: "#000000",
-    },
+      main: '#1C1C1F'
+    }
   },
+  components: {
+    MuiAppBar: {
+      styleOverrides: {
+        colorPrimary: {
+          backgroundColor: "#1C1C1F",
+          backgroundImage: "unset"
+        }
+      }
+    }
+  }
 });
 
 const Search = styled("div")(({ theme }) => ({
@@ -103,22 +113,22 @@ export default function PrimarySearchAppBar({route}: {route: string}) {
       onClose={handleMobileMenuClose}
     >
       <MenuItem>
-        <IconButton size="large" color="inherit">
+        <IconButton color="inherit">
           <FormatListBulletedIcon />
         </IconButton>
-        <p>List View</p>
+        <p className="text-xs">List View</p>
       </MenuItem>
       <MenuItem>
-        <IconButton size="large" color="inherit">
+        <IconButton color="inherit">
           <LightModeIcon />
         </IconButton>
-        <p>Light Mode</p>
+        <p className="text-xs">Light Mode</p>
       </MenuItem>
       <MenuItem>
-        <IconButton size="large" aria-haspopup="true" color="inherit">
+        <IconButton aria-haspopup="true" color="inherit">
           <GitHubIcon />
         </IconButton>
-        <p>Github repo</p>
+        <p className="text-xs">GitHub Repo</p>
       </MenuItem>
     </Menu>
   );
@@ -126,7 +136,7 @@ export default function PrimarySearchAppBar({route}: {route: string}) {
   return (
     <ThemeProvider theme={darkTheme}>
       <Box sx={{ flexGrow: 1 }}>
-        <AppBar position="relative" sx={{ backgroundColor: "black" }}>
+        <AppBar position="relative">
           <Toolbar>
             <IconButton
               size="medium"

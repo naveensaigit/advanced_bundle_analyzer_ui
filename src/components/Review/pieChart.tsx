@@ -1,17 +1,18 @@
 import { Chart, ArcElement, Tooltip, Title, Legend } from "chart.js";
-Chart.register(ArcElement, Tooltip, Title, Legend);
 import { Pie } from "react-chartjs-2";
-import { data } from "../Browser";
+import { data } from "../Browser/Browser";
 
-function PieChartComponent({dataObj, route}: {dataObj: data;route: string;}) {
+Chart.register(ArcElement, Tooltip, Title, Legend);
+
+function PieChartComponent({dataObj, route}: {dataObj: data, route: string}) {
   const labels = ["Already Lazy Loaded", "Can Be Lazy Loaded"];
   const datasets = [
     {
       data: [0, 0],
       backgroundColor: ["#34AC36", "#E1245E"],
-      borderColor: ["#000000"],
+      borderColor: ["#1C1C1F"],
       borderWidth: 1.75,
-      pointBackgroundColor: "rgba(255,206,86,0.2)",
+      pointBackgroundColor: "#1C1C1F",
     }
   ];
 
@@ -42,11 +43,16 @@ function PieChartComponent({dataObj, route}: {dataObj: data;route: string;}) {
   datasets[0].data[0] = already;
   datasets[0].data[1] = can;
 
-  return <Pie 
-  data={{
-    labels: labels,
-    datasets: datasets,
-  }} />;
+  return (
+    <div style={{ width: "14%", minWidth: 180, margin: "auto", marginTop: 10, marginBottom: 30 }}>
+      <Pie 
+        data={{
+          labels: labels,
+          datasets: datasets,
+        }}
+      />
+    </div>
+  );
 }
 
 export default PieChartComponent;

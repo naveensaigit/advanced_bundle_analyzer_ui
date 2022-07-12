@@ -1,5 +1,5 @@
 import TableGenerator from "./TableGenerator";
-import { data, fileData, folderData } from "../Browser";
+import { data, fileData } from "../Browser/Browser";
 
 function getFilesDetailsDFS(dataObj: data, entry: string) {
   let subFiles: string[] = [];
@@ -50,23 +50,9 @@ export default function FileDetails({
 }) {
   let subFiles: string[] = getFilesDetailsDFS(dataObj, route);
 
-  let subFilesObj: fileData = {
-    name: "",
-    path: "",
-    size: 0,
-    type: "",
-    totalLazyLoaded: [],
-    canBeLazyLoaded: [],
-    parentFolder: ""
-  };
-
-  for (let file of subFiles) {
-    subFilesObj[file] = dataObj[file];
-  }
-
   return (
     <>
-      <TableGenerator subFilesObj={subFilesObj} subFiles={subFiles} />
+      <TableGenerator dataObj={dataObj} subFiles={subFiles} />
     </>
   );
 }
