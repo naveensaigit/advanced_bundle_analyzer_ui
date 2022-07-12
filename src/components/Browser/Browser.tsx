@@ -1,6 +1,6 @@
-import Header from './Header/Header';
-import GridView from "./GridView";
-import dataObj from "./data.json";
+import Header from '../Header/Header';
+import GridView from "./GridView"
+import dataObj from "../data.json";
 
 // Type to store the components in totalLazyLoaded or canBeLazyLoaded
 export type component = {
@@ -41,8 +41,7 @@ export type data = {
   [key: string]: fileData | folderData
 }
 
-function Homepage({route}: {route: string}) {
-
+function Browser({route}: {route: string}) {
   return (
     <>
       <Header route={route}/>
@@ -51,4 +50,4 @@ function Homepage({route}: {route: string}) {
   );
 }
 
-export default Homepage;
+export default Browser;
