@@ -21,7 +21,7 @@ export default function BasicTable({ dataObj, subFiles }: { dataObj: data; subFi
           let lazy = dataObj[file].totalLazyLoaded, nonlazy = dataObj[file].canBeLazyLoaded;
           let can: number = 0, already: number = 0;
           return (typeof lazy !== "number" && typeof nonlazy !== "number") ?
-            <div key={file}>
+            <div key={file} className="ml-[24px] mr-[24px]">
               <TableContainer component={Paper} sx={{ width: "95%", margin: "auto", marginBottom: 5, borderRadius: 5 }}>
                 <Table sx={{ minWidth: 65, borderRadius: 100 }} aria-label="simple table">
                   <TableHead sx={{ backgroundColor: "#1C1C1F", borderBottom: '2px solid black' }}>

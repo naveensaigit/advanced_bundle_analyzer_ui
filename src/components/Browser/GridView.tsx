@@ -38,7 +38,7 @@ function GridView({ dataObj, route }: { dataObj: data, route: string }) {
       <ThemeProvider theme={gridTheme}>
         <SlidingPanel/>
 
-        <Box className='grow mt-3'>
+        <Box className='grow m-5'>
           <Grid container>
 
           {routeData.foldersInside.map((entry: string) =>

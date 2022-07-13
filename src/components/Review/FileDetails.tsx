@@ -50,9 +50,5 @@ export default function FileDetails({
 }) {
   let subFiles: string[] = getFilesDetailsDFS(dataObj, route);
 
-  return (
-    <>
-      <TableGenerator dataObj={dataObj} subFiles={subFiles} />
-    </>
-  );
+  return <TableGenerator dataObj={dataObj} subFiles={subFiles} />
 }
