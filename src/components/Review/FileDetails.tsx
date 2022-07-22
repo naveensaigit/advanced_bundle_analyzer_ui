@@ -5,41 +5,18 @@ function getFilesDetailsDFS(dataObj: data, entry: string) {
   let subFiles: string[] = [];
   const routerData: data = dataObj[entry];
 
-  if (
-    (routerData &&
-      typeof routerData.canBeLazyLoaded === "object" &&
-      Object.keys(routerData.canBeLazyLoaded).length > 0) ||
-    (routerData &&
-      typeof routerData.alreadyLazyLoaded === "number" &&
-      routerData.alreadyLazyLoaded > 0) ||
-    (routerData &&
-      typeof routerData.canNotBeLazyLoaded === "number" &&
-      routerData.canNotBeLazyLoaded > 0)
-  ) {
-    subFiles.push(entry);
-  } else if (routerData && typeof routerData["foldersInside"] === "object") {
-    for (let subFolder in routerData["foldersInside"]) {
-      subFiles.concat(
-        getFilesDetailsDFS(dataObj, routerData["foldersInside"][subFolder])
-      );
-    }
-  }
-  if (routerData && typeof routerData["filesInside"] === "object") {
-    for (let subFile in routerData["filesInside"]) {
-      const file = routerData["filesInside"][subFile];
+  if(!routerData) return [];
 
+  if (typeof routerData.canBeLazyLoaded === "object" && Object.keys(routerData.canBeLazyLoaded).length > 0)
+    subFiles.push(entry);
+  else if (typeof routerData.foldersInside === "object")
+    for (let subFolder in routerData.foldersInside)
+      subFiles.push(...getFilesDetailsDFS(dataObj, routerData.foldersInside[subFolder]));
+  if (typeof routerData.filesInside === "object") {
+    for (let subFile in routerData.filesInside) {
+      const file = routerData.filesInside[subFile];
       const fileData: data = dataObj[file];
-      if (
-        (fileData &&
-          typeof fileData.canBeLazyLoaded === "object" &&
-          Object.keys(fileData.canBeLazyLoaded).length > 0) ||
-        (fileData &&
-          typeof fileData.alreadyLazyLoaded === "number" &&
-          fileData.alreadyLazyLoaded > 0) ||
-        (fileData &&
-          typeof fileData.canNotBeLazyLoaded === "number" &&
-          fileData.canNotBeLazyLoaded > 0)
-      )
+      if (typeof fileData.canBeLazyLoaded === "object" && Object.keys(fileData.canBeLazyLoaded).length > 0)
         subFiles.push(file);
     }
   }
