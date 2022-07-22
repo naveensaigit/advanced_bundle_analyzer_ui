@@ -8,7 +8,7 @@ function getFilesDetailsDFS(dataObj: data, entry: string) {
   if (
     (routerData &&
       typeof routerData.canBeLazyLoaded === "object" &&
-      Object.keys(routerData.canNotBeLazyLoaded).length > 0) ||
+      Object.keys(routerData.canBeLazyLoaded).length > 0) ||
     (routerData &&
       typeof routerData.alreadyLazyLoaded === "number" &&
       routerData.alreadyLazyLoaded > 0) ||
