@@ -2,10 +2,13 @@ import Header from '../Header/Header';
 import GridView from "./GridView"
 import dataObj from "../data.json";
 
-// Type to store the components in totalLazyLoaded or canBeLazyLoaded
-export type component = {
-  name: string,
-  path: string
+export type importStatements = {
+  path: string,
+  exportName: string | null
+}
+
+export type canBeLazy = {
+  [key: string]: importStatements     // Here key is the importName used for importing a component in a file.
 }
 
 // Information stored for a file
@@ -14,8 +17,9 @@ export type fileData = {
   path: string,
   size: number,
   type: string,
-  totalLazyLoaded: component[],
-  canBeLazyLoaded: component[],
+  alreadyLazyLoaded: number,
+  canBeLazyLoaded: canBeLazy,
+  canNotBeLazyLoaded: number,
   parentFolder: string,
   [key: string]: any
 }
@@ -27,8 +31,9 @@ export type folderData = {
   size: number,
   noOfSubFolders: number,
   noOfSubFiles: number,
-  totalLazyLoaded: number,
+  alreadyLazyLoaded: number,
   canBeLazyLoaded: number,
+  canNotBeLazyLoaded: number,
   foldersInside: string[],
   filesInside: string[],
   parentFolder: string,

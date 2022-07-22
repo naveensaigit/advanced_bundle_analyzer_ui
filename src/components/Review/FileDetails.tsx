@@ -1,5 +1,5 @@
 import TableGenerator from "./TableGenerator";
-import { data, fileData } from "../Browser/Browser";
+import { data } from "../Browser/Browser";
 
 function getFilesDetailsDFS(dataObj: data, entry: string) {
   let subFiles: string[] = [];
@@ -8,10 +8,13 @@ function getFilesDetailsDFS(dataObj: data, entry: string) {
   if (
     (routerData &&
       typeof routerData.canBeLazyLoaded === "object" &&
-      routerData.canBeLazyLoaded.length > 0) ||
+      Object.keys(routerData.canNotBeLazyLoaded).length > 0) ||
     (routerData &&
-      typeof routerData.totalLazyLoaded === "object" &&
-      routerData.totalLazyLoaded.length > 0)
+      typeof routerData.alreadyLazyLoaded === "number" &&
+      routerData.alreadyLazyLoaded > 0) ||
+    (routerData &&
+      typeof routerData.canNotBeLazyLoaded === "number" &&
+      routerData.canNotBeLazyLoaded > 0)
   ) {
     subFiles.push(entry);
   } else if (routerData && typeof routerData["foldersInside"] === "object") {
@@ -29,10 +32,13 @@ function getFilesDetailsDFS(dataObj: data, entry: string) {
       if (
         (fileData &&
           typeof fileData.canBeLazyLoaded === "object" &&
-          fileData.canBeLazyLoaded.length > 0) ||
+          Object.keys(fileData.canBeLazyLoaded).length > 0) ||
         (fileData &&
-          typeof fileData.totalLazyLoaded === "object" &&
-          fileData.totalLazyLoaded.length > 0)
+          typeof fileData.alreadyLazyLoaded === "number" &&
+          fileData.alreadyLazyLoaded > 0) ||
+        (fileData &&
+          typeof fileData.canNotBeLazyLoaded === "number" &&
+          fileData.canNotBeLazyLoaded > 0)
       )
         subFiles.push(file);
     }

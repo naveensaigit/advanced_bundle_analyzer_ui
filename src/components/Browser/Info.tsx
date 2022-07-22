@@ -13,8 +13,8 @@ function formatSize(bytes: number, decimals: number = 2): string {
 }
 
 function Info({entry}: {entry: fileData | folderData}) {
-  let lazy = entry.totalLazyLoaded, nonlazy = entry.canBeLazyLoaded;
-  if(typeof lazy === "number" && typeof nonlazy === "number")
+  let lazy = entry.alreadyLazyLoaded, nonlazy = entry.canBeLazyLoaded, cantBeLazy=entry.canNotBeLazyLoaded;
+  if(typeof lazy === "number" && typeof nonlazy === "number" && typeof cantBeLazy === "number")
     return (
       <div>
         <p className="break-all"><b>Name: </b>{entry.name}</p>
@@ -26,7 +26,7 @@ function Info({entry}: {entry: fileData | folderData}) {
           lazy > 0 ?
           <p className="break-all"><b>Already lazy loaded:&nbsp;</b>
             <span className="text-[#34AC36]">
-              {lazy * 100 / (lazy + nonlazy)}%
+              {(lazy * 100 / (lazy + nonlazy + cantBeLazy)).toFixed(2)}%
             </span>
           </p>
           : ""
@@ -35,15 +35,24 @@ function Info({entry}: {entry: fileData | folderData}) {
           nonlazy > 0 ?
           <p className="break-all"><b>To be lazy loaded:&nbsp;</b>
             <span className="text-[#E1245E]">
-              {nonlazy * 100 / (lazy + nonlazy)}%
+              {(nonlazy * 100 / (lazy + nonlazy + cantBeLazy)).toFixed(2)}%
+            </span>
+          </p>
+          : ""
+        }
+        {
+          cantBeLazy > 0 ?
+          <p className="break-all"><b>Can&apos;t be lazy loaded:&nbsp;</b>
+            <span className="text-[#808080]">
+              {(cantBeLazy * 100 / (lazy + nonlazy + cantBeLazy)).toFixed(2)}%
             </span>
           </p>
           : ""
         }
       </div>
     )
-  else if(typeof lazy !== "number" && typeof nonlazy !== "number") {
-    lazy = lazy.length; nonlazy = nonlazy.length;
+  else if(typeof lazy === "number" && typeof nonlazy !== "number" && typeof cantBeLazy === "number") {
+    nonlazy = Object.keys(nonlazy).length;
     return (
       <div>
         <p className="break-all"><b>Name: </b>{entry.name}</p>
@@ -53,7 +62,7 @@ function Info({entry}: {entry: fileData | folderData}) {
           lazy > 0 ?
           <p className="break-all"><b>Already lazy loaded:&nbsp;</b>
             <span className="text-[#34AC36]">
-              {lazy * 100 / (lazy + nonlazy)}%
+              {(lazy * 100 / (lazy + nonlazy + cantBeLazy)).toFixed(2)}%
             </span>
           </p>
           : ""
@@ -62,7 +71,16 @@ function Info({entry}: {entry: fileData | folderData}) {
           nonlazy > 0 ?
           <p className="break-all"><b>To be lazy loaded:&nbsp;</b>
             <span className="text-[#E1245E]">
-              {nonlazy * 100 / (lazy + nonlazy)}%
+              {(nonlazy * 100 / (lazy + nonlazy + cantBeLazy)).toFixed(2)}%
+            </span>
+          </p>
+          : ""
+        }
+        {
+          cantBeLazy > 0 ?
+          <p className="break-all"><b>Can&apos;t be lazy loaded:&nbsp;</b>
+            <span className="text-[#808080]">
+              {(cantBeLazy * 100 / (lazy + nonlazy + cantBeLazy)).toFixed(2)}%
             </span>
           </p>
           : ""

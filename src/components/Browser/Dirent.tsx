@@ -74,10 +74,12 @@ function Dirent({entry}: {entry: fileData | folderData}) {
   }, [entry.name]);
 
   let color;
-  if(typeof entry.canBeLazyLoaded === "number")
-    color = entry.canBeLazyLoaded > 0 ? "#E1245E" : "#34AC36";
-  else
-    color = entry.canBeLazyLoaded.length > 0 ? "#E1245E" : "#34AC36";
+  if(typeof entry.canBeLazyLoaded === "number"){
+    color = entry.canBeLazyLoaded > 0 ? "#E1245E" : (entry.alreadyLazyLoaded > 0 ? "#34AC36" : "#808080");
+  }
+  else{
+    color = Object.keys(entry.canBeLazyLoaded).length > 0 ? "#E1245E" : (entry.alreadyLazyLoaded > 0 ? "#34AC36" : "#808080");
+  }
 
   return (
     <InfoTooltip

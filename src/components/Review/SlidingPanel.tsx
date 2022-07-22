@@ -6,7 +6,7 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import CloseIcon from '@mui/icons-material/Close';
 import dataObj from '../data.json';
-import PieChartComponent from "./pieChart";
+import DoughnutChartComponent from "./DoughnutChart";
 import FileDetails from './FileDetails';
 
 export default function SlidingPanel() {
@@ -48,7 +48,7 @@ export default function SlidingPanel() {
             <CloseIcon sx={{ color: 'white' }} />
           </IconButton>
         </Box>
-        <PieChartComponent dataObj={dataObj} route={route}/>
+        <DoughnutChartComponent dataObj={dataObj} route={route}/>
         <FileDetails dataObj={dataObj} route={route}/>
       </Drawer>
     </div>
