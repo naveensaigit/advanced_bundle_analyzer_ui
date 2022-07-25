@@ -48,25 +48,37 @@ export type data = {
 let dataObj: data = JSON.parse(JSON.stringify(originalDataObj));
 
 function DFS(path: string) {
-  for (let subFolder of dataObj[path].foldersInside) DFS(subFolder);
+  let folders: string[] = dataObj[path].foldersInside;
+  for (let subFolder of folders) DFS(subFolder);
 
   let count: number = 0;
+  let noOfSubFolders: number = 0;
+  let noOfSubFiles: number = 0;
+  let size: number = 0;
 
   for (let subFile of dataObj[path].filesInside) {
     let imp = dataObj[subFile].canBeLazyLoaded;
 
-    if (!imp || typeof imp === "number") continue;
+    if (typeof imp === "number" || typeof imp === "undefined") continue;
 
     count += Object.keys(imp).length;
+    noOfSubFiles++;
+    size += dataObj[subFile].size;
   }
 
   for (let subFolder of dataObj[path].foldersInside) {
     let subImp = dataObj[subFolder].canBeLazyLoaded;
-    if (!subImp || typeof subImp !== "number") continue;
+    if (typeof subImp !== "number" || typeof subImp === "undefined") continue;
     count += subImp;
+    noOfSubFolders += 1+dataObj[subFolder].noOfSubFolders;
+    noOfSubFiles += dataObj[subFolder].noOfSubFiles;
+    size += dataObj[subFolder].size;
   }
 
   dataObj[path].canBeLazyLoaded = count;
+  dataObj[path].noOfSubFiles = noOfSubFiles;
+  dataObj[path].noOfSubFolders = noOfSubFolders;
+  dataObj[path].size = size;
 
   if (
     dataObj[path] &&
