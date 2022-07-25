@@ -5,6 +5,7 @@ import Box from '@mui/material/Box';
 import Dirent from './Dirent';
 import { data } from "./Browser";
 import SlidingPanel from '../Review/SlidingPanel';
+import { UpdateDataObj } from './Browser';
 
 declare module '@mui/material/styles' {
   interface BreakpointOverrides {

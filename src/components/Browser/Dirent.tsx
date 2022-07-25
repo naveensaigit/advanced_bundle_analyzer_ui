@@ -74,7 +74,9 @@ function Dirent({entry}: {entry: fileData | folderData}) {
   }, [entry.name]);
 
   let color;
-  if(typeof entry.canBeLazyLoaded === "number"){
+  if(entry.parentFolder === "/")
+    color = "white";
+  else if(typeof entry.canBeLazyLoaded === "number"){
     color = entry.canBeLazyLoaded > 0 ? "#E1245E" : (entry.alreadyLazyLoaded > 0 ? "#34AC36" : "#808080");
   }
   else{

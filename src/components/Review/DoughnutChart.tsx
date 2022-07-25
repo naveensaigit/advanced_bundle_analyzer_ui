@@ -56,7 +56,7 @@ function DoughnutChartComponent({dataObj, route}: {dataObj: data, route: string}
   // labels[2] += ' : ' + (can*100)/(can + already + canNot) + ' %';
 
   return (
-    <div style={{ width: "20%", minWidth: 300, margin: "auto", marginTop: 10, marginBottom: 30 }}>
+    <div style={{ width: "25%", minWidth: 300, margin: "auto", marginTop: 10, marginBottom: 30 }}>
       <Doughnut  
         data={{
           labels: labels,

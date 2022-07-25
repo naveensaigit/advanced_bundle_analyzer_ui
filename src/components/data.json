@@ -1,173 +1,188 @@
 {
-    "rootPath": {
-      "name": "rootPath",
-      "path": "C:/Users/Sprinklr/Desktop/practice/New folder/react-crypto-tracker",
-      "size": 0,
-      "type": "",
-      "alreadyLazyLoaded": 0,
-      "canBeLazyLoaded": {},
-      "canNotBeLazyLoaded": 0,
-      "parentFolder": "/.."
+  "rootPath": {
+    "name": "rootPath",
+    "path": "C:/Users/Sprinklr/Desktop/practice/New folder/react-crypto-tracker",
+    "size": 0,
+    "type": "",
+    "alreadyLazyLoaded": 0,
+    "canBeLazyLoaded": {},
+    "canNotBeLazyLoaded": 0,
+    "parentFolder": "/.."
+  },
+  "/react-crypto-tracker/src/App.js": {
+    "name": "App.js",
+    "path": "C:/Users/Sprinklr/Desktop/practice/New folder/react-crypto-tracker/src/App.js",
+    "size": 728,
+    "type": ".js",
+    "alreadyLazyLoaded": 0,
+    "canBeLazyLoaded": {
+      "CoinPage": {
+        "path": "C:/Users/Sprinklr/Desktop/practice/New folder/react-crypto-tracker/src/Pages/CoinPage.js",
+        "exportName": "CoinPage"
+      }
     },
-    "/src/App.js": {
-      "name": "App.js",
-      "path": "C:/Users/Sprinklr/Desktop/practice/New folder/react-crypto-tracker/src/App.js",
-      "size": 728,
-      "type": ".js",
-      "alreadyLazyLoaded": 0,
-      "canBeLazyLoaded": {
-        "CoinPage": {
-          "path": "C:/Users/Sprinklr/Desktop/practice/New folder/react-crypto-tracker/src/Pages/CoinPage.js",
-          "exportName": "CoinPage"
-        }
+    "canNotBeLazyLoaded": 2,
+    "parentFolder": "/react-crypto-tracker/src"
+  },
+  "/react-crypto-tracker/src/components/Banner/Banner.js": {
+    "name": "Banner.js",
+    "path": "C:/Users/Sprinklr/Desktop/practice/New folder/react-crypto-tracker/src/components/Banner/Banner.js",
+    "size": 1506,
+    "type": ".js",
+    "alreadyLazyLoaded": 0,
+    "canBeLazyLoaded": {},
+    "canNotBeLazyLoaded": 1,
+    "parentFolder": "/react-crypto-tracker/src/components/Banner"
+  },
+  "/react-crypto-tracker/src/components/Banner": {
+    "name": "Banner",
+    "path": "C:/Users/Sprinklr/Desktop/practice/New folder/react-crypto-tracker/src/components/Banner",
+    "size": 1506,
+    "noOfSubFolders": 0,
+    "noOfSubFiles": 1,
+    "alreadyLazyLoaded": 0,
+    "canBeLazyLoaded": 0,
+    "canNotBeLazyLoaded": 1,
+    "foldersInside": [],
+    "filesInside": [
+      "/react-crypto-tracker/src/components/Banner/Banner.js"
+    ],
+    "parentFolder": "/react-crypto-tracker/src/components"
+  },
+  "/react-crypto-tracker/src/components/CoinsTable.js": {
+    "name": "CoinsTable.js",
+    "path": "C:/Users/Sprinklr/Desktop/practice/New folder/react-crypto-tracker/src/components/CoinsTable.js",
+    "size": 6720,
+    "type": ".js",
+    "alreadyLazyLoaded": 0,
+    "canBeLazyLoaded": {
+      "CoinList": {
+        "path": "C:/Users/Sprinklr/Desktop/practice/New folder/react-crypto-tracker/src/config/api.js",
+        "exportName": "CoinList"
       },
-      "canNotBeLazyLoaded": 2,
-      "parentFolder": "/src"
+      "CryptoState": {
+        "path": "C:/Users/Sprinklr/Desktop/practice/New folder/react-crypto-tracker/src/CryptoContext.js",
+        "exportName": "CryptoState"
+      }
     },
-    "/src/components/Banner/Banner.js": {
-      "name": "Banner.js",
-      "path": "C:/Users/Sprinklr/Desktop/practice/New folder/react-crypto-tracker/src/components/Banner/Banner.js",
-      "size": 1506,
-      "type": ".js",
-      "alreadyLazyLoaded": 0,
-      "canBeLazyLoaded": {},
-      "canNotBeLazyLoaded": 1,
-      "parentFolder": "/src/components/Banner"
+    "canNotBeLazyLoaded": 0,
+    "parentFolder": "/react-crypto-tracker/src/components"
+  },
+  "/react-crypto-tracker/src/components/Header.js": {
+    "name": "Header.js",
+    "path": "C:/Users/Sprinklr/Desktop/practice/New folder/react-crypto-tracker/src/components/Header.js",
+    "size": 1747,
+    "type": ".js",
+    "alreadyLazyLoaded": 0,
+    "canBeLazyLoaded": {
+      "CryptoState": {
+        "path": "C:/Users/Sprinklr/Desktop/practice/New folder/react-crypto-tracker/src/CryptoContext.js",
+        "exportName": "CryptoState"
+      }
     },
-    "/src/components/Banner": {
-      "name": "Banner",
-      "path": "C:/Users/Sprinklr/Desktop/practice/New folder/react-crypto-tracker/src/components/Banner",
-      "size": 1506,
-      "noOfSubFolders": 0,
-      "noOfSubFiles": 1,
-      "alreadyLazyLoaded": 0,
-      "canBeLazyLoaded": 0,
-      "canNotBeLazyLoaded": 1,
-      "foldersInside": [],
-      "filesInside": [
-        "/src/components/Banner/Banner.js"
-      ],
-      "parentFolder": "/src/components"
-    },
-    "/src/components/CoinsTable.js": {
-      "name": "CoinsTable.js",
-      "path": "C:/Users/Sprinklr/Desktop/practice/New folder/react-crypto-tracker/src/components/CoinsTable.js",
-      "size": 6720,
-      "type": ".js",
-      "alreadyLazyLoaded": 0,
-      "canBeLazyLoaded": {
-        "CoinList": {
-          "path": "C:/Users/Sprinklr/Desktop/practice/New folder/react-crypto-tracker/src/config/api.js",
-          "exportName": "CoinList"
-        },
-        "CryptoState": {
-          "path": "C:/Users/Sprinklr/Desktop/practice/New folder/react-crypto-tracker/src/CryptoContext.js",
-          "exportName": "CryptoState"
-        }
-      },
-      "canNotBeLazyLoaded": 0,
-      "parentFolder": "/src/components"
-    },
-    "/src/components/Header.js": {
-      "name": "Header.js",
-      "path": "C:/Users/Sprinklr/Desktop/practice/New folder/react-crypto-tracker/src/components/Header.js",
-      "size": 1747,
-      "type": ".js",
-      "alreadyLazyLoaded": 0,
-      "canBeLazyLoaded": {
-        "CryptoState": {
-          "path": "C:/Users/Sprinklr/Desktop/practice/New folder/react-crypto-tracker/src/CryptoContext.js",
-          "exportName": "CryptoState"
-        }
-      },
-      "canNotBeLazyLoaded": 0,
-      "parentFolder": "/src/components"
-    },
-    "/src/components": {
-      "name": "components",
-      "path": "C:/Users/Sprinklr/Desktop/practice/New folder/react-crypto-tracker/src/components",
-      "size": 9973,
-      "noOfSubFolders": 1,
-      "noOfSubFiles": 3,
-      "alreadyLazyLoaded": 0,
-      "canBeLazyLoaded": 3,
-      "canNotBeLazyLoaded": 0,
-      "foldersInside": [
-        "/src/components/Banner"
-      ],
-      "filesInside": [
-        "/src/components/CoinsTable.js",
-        "/src/components/Header.js"
-      ],
-      "parentFolder": "/src"
-    },
-    "/src/index.js": {
-      "name": "index.js",
-      "path": "C:/Users/Sprinklr/Desktop/practice/New folder/react-crypto-tracker/src/index.js",
-      "size": 374,
-      "type": ".js",
-      "alreadyLazyLoaded": 0,
-      "canBeLazyLoaded": {},
-      "canNotBeLazyLoaded": 2,
-      "parentFolder": "/src"
-    },
-    "/src/Pages/HomePage.js": {
-      "name": "HomePage.js",
-      "path": "C:/Users/Sprinklr/Desktop/practice/New folder/react-crypto-tracker/src/Pages/HomePage.js",
-      "size": 264,
-      "type": ".js",
-      "alreadyLazyLoaded": 0,
-      "canBeLazyLoaded": {},
-      "canNotBeLazyLoaded": 2,
-      "parentFolder": "/src/Pages"
-    },
-    "/src/Pages": {
-      "name": "Pages",
-      "path": "C:/Users/Sprinklr/Desktop/practice/New folder/react-crypto-tracker/src/Pages",
-      "size": 264,
-      "noOfSubFolders": 0,
-      "noOfSubFiles": 1,
-      "alreadyLazyLoaded": 0,
-      "canBeLazyLoaded": 0,
-      "canNotBeLazyLoaded": 2,
-      "foldersInside": [],
-      "filesInside": [
-        "/src/Pages/HomePage.js"
-      ],
-      "parentFolder": "/src"
-    },
-    "/src": {
-      "name": "src",
-      "path": "C:/Users/Sprinklr/Desktop/practice/New folder/react-crypto-tracker/src",
-      "size": 11339,
-      "noOfSubFolders": 3,
-      "noOfSubFiles": 6,
-      "alreadyLazyLoaded": 0,
-      "canBeLazyLoaded": 4,
-      "canNotBeLazyLoaded": 4,
-      "foldersInside": [
-        "/src/components",
-        "/src/Pages"
-      ],
-      "filesInside": [
-        "/src/App.js",
-        "/src/index.js"
-      ],
-      "parentFolder": "/"
-    },
-    "/": {
-      "name": "react-crypto-tracker",
-      "path": "C:/Users/Sprinklr/Desktop/practice/New folder/react-crypto-tracker",
-      "size": 11339,
-      "noOfSubFolders": 4,
-      "noOfSubFiles": 6,
-      "alreadyLazyLoaded": 0,
-      "canBeLazyLoaded": 4,
-      "canNotBeLazyLoaded": 0,
-      "foldersInside": [
-        "/src"
-      ],
-      "filesInside": [],
-      "parentFolder": "/"
-    }
+    "canNotBeLazyLoaded": 0,
+    "parentFolder": "/react-crypto-tracker/src/components"
+  },
+  "/react-crypto-tracker/src/components": {
+    "name": "components",
+    "path": "C:/Users/Sprinklr/Desktop/practice/New folder/react-crypto-tracker/src/components",
+    "size": 9973,
+    "noOfSubFolders": 1,
+    "noOfSubFiles": 3,
+    "alreadyLazyLoaded": 0,
+    "canBeLazyLoaded": 3,
+    "canNotBeLazyLoaded": 1,
+    "foldersInside": [
+      "/react-crypto-tracker/src/components/Banner"
+    ],
+    "filesInside": [
+      "/react-crypto-tracker/src/components/CoinsTable.js",
+      "/react-crypto-tracker/src/components/Header.js"
+    ],
+    "parentFolder": "/react-crypto-tracker/src"
+  },
+  "/react-crypto-tracker/src/index.js": {
+    "name": "index.js",
+    "path": "C:/Users/Sprinklr/Desktop/practice/New folder/react-crypto-tracker/src/index.js",
+    "size": 374,
+    "type": ".js",
+    "alreadyLazyLoaded": 0,
+    "canBeLazyLoaded": {},
+    "canNotBeLazyLoaded": 2,
+    "parentFolder": "/react-crypto-tracker/src"
+  },
+  "/react-crypto-tracker/src/Pages/HomePage.js": {
+    "name": "HomePage.js",
+    "path": "C:/Users/Sprinklr/Desktop/practice/New folder/react-crypto-tracker/src/Pages/HomePage.js",
+    "size": 264,
+    "type": ".js",
+    "alreadyLazyLoaded": 0,
+    "canBeLazyLoaded": {},
+    "canNotBeLazyLoaded": 2,
+    "parentFolder": "/react-crypto-tracker/src/Pages"
+  },
+  "/react-crypto-tracker/src/Pages": {
+    "name": "Pages",
+    "path": "C:/Users/Sprinklr/Desktop/practice/New folder/react-crypto-tracker/src/Pages",
+    "size": 264,
+    "noOfSubFolders": 0,
+    "noOfSubFiles": 1,
+    "alreadyLazyLoaded": 0,
+    "canBeLazyLoaded": 0,
+    "canNotBeLazyLoaded": 2,
+    "foldersInside": [],
+    "filesInside": [
+      "/react-crypto-tracker/src/Pages/HomePage.js"
+    ],
+    "parentFolder": "/react-crypto-tracker/src"
+  },
+  "/react-crypto-tracker/src": {
+    "name": "src",
+    "path": "C:/Users/Sprinklr/Desktop/practice/New folder/react-crypto-tracker/src",
+    "size": 11339,
+    "noOfSubFolders": 3,
+    "noOfSubFiles": 6,
+    "alreadyLazyLoaded": 0,
+    "canBeLazyLoaded": 4,
+    "canNotBeLazyLoaded": 7,
+    "foldersInside": [
+      "/react-crypto-tracker/src/components",
+      "/react-crypto-tracker/src/Pages"
+    ],
+    "filesInside": [
+      "/react-crypto-tracker/src/App.js",
+      "/react-crypto-tracker/src/index.js"
+    ],
+    "parentFolder": "/react-crypto-tracker"
+  },
+  "/react-crypto-tracker": {
+    "name": "react-crypto-tracker",
+    "path": "C:/Users/Sprinklr/Desktop/practice/New folder/react-crypto-tracker",
+    "size": 11339,
+    "noOfSubFolders": 4,
+    "noOfSubFiles": 6,
+    "alreadyLazyLoaded": 0,
+    "canBeLazyLoaded": 4,
+    "canNotBeLazyLoaded": 7,
+    "foldersInside": [
+      "/react-crypto-tracker/src"
+    ],
+    "filesInside": [],
+    "parentFolder": "/"
+  },
+  "/": {
+    "name": ":rootDirectory",
+    "path": "C:/Users/Sprinklr/Desktop/practice/New folder/react-crypto-tracker",
+    "size": 0,
+    "noOfSubFolders": 0,
+    "noOfSubFiles": 0,
+    "alreadyLazyLoaded": 0,
+    "canBeLazyLoaded": 0,
+    "canNotBeLazyLoaded": 0,
+    "foldersInside": [
+      "/react-crypto-tracker"
+    ],
+    "filesInside": [],
+    "parentFolder": "/"
   }
+}
