@@ -30,7 +30,7 @@ function DoughnutChartComponent({dataObj, route}: {dataObj: data, route: string}
   if (
     typeof routerData.canBeLazyLoaded === "number" &&
     typeof routerData.alreadyLazyLoaded === "number" &&
-    typeof routerData.canNotBeLazyLoaded === "number" 
+    typeof routerData.canNotBeLazyLoaded === "number"
   ) {
     can = routerData.canBeLazyLoaded;
     already = routerData.alreadyLazyLoaded;
@@ -38,7 +38,7 @@ function DoughnutChartComponent({dataObj, route}: {dataObj: data, route: string}
   } else if (
     typeof routerData.canBeLazyLoaded === "object" &&
     typeof routerData.alreadyLazyLoaded === "number" &&
-    typeof routerData.canNotBeLazyLoaded === "number" 
+    typeof routerData.canNotBeLazyLoaded === "number"
   ) {
     can = Object.keys(routerData.canBeLazyLoaded).length;
     already = routerData.alreadyLazyLoaded;
@@ -57,7 +57,7 @@ function DoughnutChartComponent({dataObj, route}: {dataObj: data, route: string}
 
   return (
     <div style={{ width: "25%", minWidth: 300, margin: "auto", marginTop: 10, marginBottom: 30 }}>
-      <Doughnut  
+      <Doughnut
         data={{
           labels: labels,
           datasets: datasets,

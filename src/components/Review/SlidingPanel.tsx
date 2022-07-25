@@ -26,7 +26,7 @@ if (typeof window !== "undefined") {
 
 export default function SlidingPanel() {
   if (typeof window !== "undefined")  window.dispatchEvent(new Event("storage"));
-  
+
   const router = useRouter(),
     route = router.query.review;
 

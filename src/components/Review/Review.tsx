@@ -43,7 +43,7 @@ function clearSavedPreferences() : void{
 
 export default function Review({ route }: { route: string }) {
   if (typeof window !== "undefined")  window.dispatchEvent(new Event("storage"));
-  
+
   const router = useRouter();
   return (
     <>
