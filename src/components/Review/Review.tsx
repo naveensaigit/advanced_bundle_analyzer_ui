@@ -79,7 +79,7 @@ export default function Review({ route }: { route: string }) {
             Notification
           </Typography>
           <Typography id="modal-modal-description" sx={{ mt: 2, color: "white", mb: 4 }}>
-            Clearing the saved preferences for removed suggestions will cause this page to reload. 
+            Clearing your saved preferences will reload this page and all the removed suggestions will re-appear! 
           </Typography>
           <Button variant="outlined" color="success" sx={{ ml: 14.5, fontWeight:'700' }} onClick={() => {
             clearSavedPreferences();

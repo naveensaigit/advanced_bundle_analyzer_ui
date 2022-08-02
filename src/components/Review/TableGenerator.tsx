@@ -66,7 +66,7 @@ export default function BasicTable({ dataObj, subFiles }: { dataObj: data; subFi
                     Notification
                   </Typography>
                   <Typography id="modal-modal-description" sx={{ mt: 2, color: "white", mb: 4 }}>
-                  Removing a suggestion will cause you to re route to the root directory.
+                  Removing a suggestion will redirect you to the root directory!
                   </Typography>
                   <Button variant="outlined" color="error" sx={{ ml: 7.5, fontWeight:'700'  }} onClick={() => {
                     RemoveSuggestion(nonlazy, currentRow);
